@@ -42,45 +42,45 @@ When a product is sold, the seller gets his "cash" updated.
 
 # Server REST API
   * Users
-  GET       /api/users      - get list of users
-  request data: none, response data - {users: [...]}
+    GET       /api/users      - get list of users
+    request data: none, response data - {users: [...]}
 
-  POST      /api/users      - register a new user
-  request data - {username:... , passhash:...}, response data - {username:... , authKey:...}
+    POST      /api/users      - register a new user
+    request data - {username:... , passhash:...}, response data - {username:... , authKey:...}
 
-  PUT       /api/users      - user login
-  request data - {username:... , passhash:...}, response data - {username:... , authKey:...}
+    PUT       /api/users      - user login
+    request data - {username:... , passhash:...}, response data - {username:... , authKey:...}
 
   * Profiles
-  GET       /api/profiles   - get an user's profile (no query for own profile, query userId for other users' profiles)
-  request data: none, response data - {username:... , created:... , products: [...]} 
+    GET       /api/profiles   - get an user's profile (no query for own profile, query userId for other users' profiles)
+    request data: none, response data - {username:... , created:... , products: [...]} 
 
   * Messages
-  GET       /api/messages   - get all received messages (get a single message if query msgId is provided)
-  request data - none, response data - {messages: [...]}
+    GET       /api/messages   - get all received messages (get a single message if query msgId is provided)
+    request data - none, response data - {messages: [...]}
 
-  POST      /api/messages   - send a new message
-  request data - {authKey:... , title:... , content:...}, response data - {msgId:...}
+    POST      /api/messages   - send a new message
+    request data - {authKey:... , title:... , content:...}, response data - {msgId:...}
 
-  DELETE    /api/messages   - delete a message
-  request data - {authKey:... , msgId:...}, response data - none
+    DELETE    /api/messages   - delete a message
+    request data - {authKey:... , msgId:...}, response data - none
 
   * Products
-  GET       /api/products   - get products info (filtered with queries pCategory and pTitle, get single product with query productId)
-  request data - none, response data - {products: [...]}
+    GET       /api/products   - get products info (filtered with queries pCategory and pTitle, get single product with query productId)
+    request data - none, response data - {products: [...]}
 
-  POST      /api/products   - post a new product
-  request data - {authKey:... , title:... , description:... , category:... , price:...}, response data - {productId:...}
+    POST      /api/products   - post a new product
+    request data - {authKey:... , title:... , description:... , category:... , price:...}, response data - {productId:...}
 
-  PUT       /api/products   - update a product details
-  request data - {authKey:... , options: {...}}, response data - {productId:...}
+    PUT       /api/products   - update a product details
+    request data - {authKey:... , options: {...}}, response data - {productId:...}
 
-  DELETE    /api/products   - delete a product
-  request data - {authKey:... , productId:...}, response data - none
+    DELETE    /api/products   - delete a product
+    request data - {authKey:... , productId:...}, response data - none
 
   * Order
-  POST      /api/orders     - post a new order
-  request data - {authKey:... , products: [productId 1, productId 2...]}, response data - {cost:...}
+    POST      /api/orders     - post a new order
+    request data - {authKey:... , products: [productId 1, productId 2...]}, response data - {cost:...}
 
 # Libraries/frameworks
   * Client
