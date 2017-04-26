@@ -1,0 +1,17 @@
+{
+  "name": "e-shop-spa",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Ivan Shtarbanov <haifischy91@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
