@@ -5,18 +5,18 @@
       context.redirect('#/home');
     });
 
-    this.get('#/home', homeForm.all);
+    this.get('#/home', homeController.all);
 
-    this.get('#/products', productsForm.get);
-    this.get('#/products/add', productsForm.add);
-    this.get('#/product/:id', productsForm.getById);
+    this.get('#/products', productsController.get);
+    this.get('#/products/add', productsController.add);
+    this.get('#/product/:id', productsController.getById);
 
-    this.get('#/messages', messageForm.get);
-    this.get('#/messages/add', messageForm.add);
+    this.get('#/messages', messagesController.get);
+    this.get('#/messages/add', messagesController.add);
 
-    this.get('#/users', usersForm.all);
-    this.get('#/users/register', usersForm.register);
-    this.get('#/profiles', usersForm.all);
+    this.get('#/users', usersController.all);
+    this.get('#/users/register', usersController.register);
+    this.get('#/profiles', usersController.all);
 
   });
 
