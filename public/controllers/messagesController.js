@@ -2,7 +2,7 @@ var messagesController = (function() {
 
   function all(context) {
    var products;
-    msg-controller.get()
+    data.messages.get()
       .then(function(resMess) {
         messages = resMess;
         return templates.get('messages')

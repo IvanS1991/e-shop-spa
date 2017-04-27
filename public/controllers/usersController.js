@@ -2,7 +2,7 @@ var usersController = function() {
 
   function all(context) {
     var users;
-    user-controller.get()
+    data.users.get()
       .then(function(resUsers) {
         users = resUsers;
         return templates.get('users')

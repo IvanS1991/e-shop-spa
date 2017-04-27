@@ -2,7 +2,7 @@ var productsController = (function() {
 
   function all(context) {
    var products;
-    product-controller.get()
+    data.products.get()
       .then(function(resProducts) {
         products = resProducts;
         return templates.get('products')

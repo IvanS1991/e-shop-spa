@@ -22,7 +22,7 @@
 
   $(function() {
     sammyApp.run('#/');
-    /*if (data.users.hasUser()) {
+    if (data.users.hasUser()) {
       $('#container-sign-in').addClass('hidden');
       $('#btn-sign-out').on('click', function(e) {
         e.preventDefault();
@@ -49,6 +49,6 @@
             toastr.error(err.responseText);
           });
       });
-    }*/
+    }
   });
 }());
