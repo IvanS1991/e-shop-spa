@@ -1,0 +1,25 @@
+{
+  "name": "public",
+  "homepage": "https://github.com/Team-Dragonfruit/e-shop-spa",
+  "authors": [
+    "Luba Angelova <liuba_angelova@outlook.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "jquery-ui": "^1.12.1",
+    "sammy": "^0.7.6",
+    "handlebars": "^4.0.5",
+    "bootstrap": "^3.3.7",
+    "toastr": "^2.1.3"
+  }
+}
