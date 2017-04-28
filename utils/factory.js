@@ -28,12 +28,13 @@ module.exports = (function() {
     }
 
     class Product {
-        constructor(title, description, category, price, sellerId) {
+        constructor(title, description, category, price, seller, sellerId) {
             this.title = title;
             this.description = description;
             this.category = category;
             this.price = price;
             this.productId = generator.productId();
+            this.seller = seller;
             this.sellerId = sellerId;
             this.created = timeParser(new Date());
         }

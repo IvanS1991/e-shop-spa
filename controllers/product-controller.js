@@ -23,7 +23,7 @@ module.exports = function(db) {
                     .value();
 
         if (seller) {
-            let product = factory.getProduct(productData.title, productData.description, productData.category, productData.price, seller.userId);
+            let product = factory.getProduct(productData.title, productData.description, productData.category, productData.price, seller.username, seller.userId);
 
             db.get("products")
                 .push(product)
