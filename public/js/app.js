@@ -45,7 +45,6 @@
           .then(function(user) {
             document.location = '#/';
             document.location.reload(true);
-            toastr.success(`Logged in as ${user.username}`);
           }, function(err) {
             $('#container-sign-in').trigger("reset");
             toastr.error(err.responseText);

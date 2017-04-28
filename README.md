@@ -1,8 +1,8 @@
 # Short info
-Idea for course project for the Telerik Academy Javascript Applications course, team Dragonfruit
+Course project for the Telerik Academy Javascript Applications course, team Dragonfruit
 
 # Short description
-Server-side and client-side functionality for an e-shop application, where users are able to register, login, logout, post their own products for sale, buy other people's products, comment on products.
+Server-side and client-side functionality for an e-shop application, where users are able to register, login, logout, post their own products for sale, buy other people's products, comment on products, send messages to other users.
 When a product is sold, the seller gets his "cash" updated.
 
 # Classes and properties
@@ -82,7 +82,7 @@ When a product is sold, the seller gets his "cash" updated.
     - DELETE    /api/products   - delete a product
       * request data - {authKey:... , productId:...}, response data - {sellerId:...}
 
-  * Order
+  * Order - 0/1
     - POST      /api/orders     - post a new order
       * request data - {authKey:... , products: [productId 1, productId 2...]}, response data - {cost:...}
 
@@ -92,7 +92,6 @@ When a product is sold, the seller gets his "cash" updated.
     - SammyJS - routing
     - HandlebarsJS - templates
     - CryptoJS - password encryption
-    - Normalize-css - normalize CSS styles
     - Bootstrap - styles
 
   * Server

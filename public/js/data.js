@@ -42,7 +42,7 @@ var data = (function() {
 
   function signOut() {
     var promise = new Promise(function(resolve, reject) {
-      localStorage.removeItem(LOCAL_STORAGE_AUTH_KEY);
+      localStorage.clear();
       resolve();
     });
     return promise;
