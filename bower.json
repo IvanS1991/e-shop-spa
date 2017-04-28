@@ -1,0 +1,29 @@
+{
+  "name": "e-shop-spa",
+  "homepage": "https://github.com/Team-Dragonfruit/e-shop-spa",
+  "authors": [
+    "Luba Angelova <liuba_angelova@outlook.com>",
+    "Ivan Shtarbanov <haifischy91@gmail.com>"
+  ],
+  "description": "Course project for Javascript Applications 2017, Telerik Academy",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "jquery-ui": "^1.12.1",
+    "sammy": "^0.7.6",
+    "handlebars": "^4.0.5",
+    "bootstrap": "^3.3.7",
+    "toastr": "^2.1.3",
+    "cryptojs-sha1": "^1.0.0"
+  },
+  "resolutions": {
+    "jquery": "^3.2.1"
+  }
+}

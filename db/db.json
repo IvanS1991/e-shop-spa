@@ -1,5 +1,15 @@
 {
-  "users": [],
+  "users": [
+    {
+      "username": "ivan",
+      "usernameToLower": "ivan",
+      "passHash": "2891baceeef1652ee698294da0e71ba78a2a4064",
+      "userId": "WJ5WUPTksrS6ZWxAvsioPcktkO4sSIHaA4sjlqZLzmfPyOfyhv5rDBDQXgJg",
+      "authKey": "ivanjjxISvBH92kLB5NoE6PjuUVMgaTpwg3bU9NbQoe5Itt7U4RYCva1N8DUDdNm",
+      "cash": 0,
+      "created": "28-04-2017 / 14:04:43"
+    }
+  ],
   "messages": [],
   "products": []
 }
