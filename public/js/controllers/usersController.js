@@ -5,12 +5,12 @@ var usersController = function() {
     data.users.get()
       .then(function(resUsers) {
         users = resUsers;
-        return templates.get('users')
+        return templates.get('users');
       })
       .then(function(template) {
-        context.$element().html(template());
-  });
-}
+        context.$element().html(template(users));
+      });
+  }
 
   function register(context) {
     templates.get('register')
@@ -23,7 +23,7 @@ var usersController = function() {
             password: $('#tb-reg-pass').val()
           };
 
-          user-controller.register(user)
+          data.users.register(user)
             .then(function() {
               toastr.success('User registered!');
               context.redirect('#/');

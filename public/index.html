@@ -1,77 +1,96 @@
 <!DOCTYPE html>
 <html>
-<head>
-  	<meta charset="UTF-8">
-	<title>E-Shop-Spa</title>
-	 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-	  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
-	  <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.css">
-	  <link rel="stylesheet" href="bower_components/toastr/toastr.css">
 
-</head>
-<body>
+  <head>
+    
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+    <link rel="stylesheet" href="./bower_components/jquery-ui/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" href="./bower_components/toastr/toastr.css"/>
+    <title>E-Shop-Spa</title>
 
-<body>
-  <div id="root">
-    <header class="container">
-      <div class="row">
-        <h1 class="page-header col-md-6">E-Shop-Spa</h1>
-        <form class="form-inline col-md-6" id="container-sign-in">
-          <div class="form-group">
-            <label class="sr-only" for="tb-username">Username</label>
-            <input type="text" class="form-control" id="tb-username" placeholder="Username">
-          </div>
-          <div class="form-group">
-            <label class="sr-only" for="tb-password">Password</label>
-            <input type="password" class="form-control" id="tb-password" placeholder="Password">
-          </div>
-          <button id="btn-sign-in" class="btn btn-default">Sign in</button>
-          <div class="checkbox">
-            <label>
+  </head>
+
+  <body>
+    <div id="root">
+
+      <!-- HEADER -->
+      <header class="container">
+        <div class="row">
+          <h1 class="page-header col-md-6">E-Shop-Spa</h1>
+
+          <!-- LOGIN -->
+          <form class="form-inline col-md-6" id="container-sign-in">
+            <div class="form-group">
+              <label class="sr-only" for="tb-username">Username</label>
+              <input type="text" class="form-control" id="tb-username" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="tb-password">Password</label>
+              <input type="password" class="form-control" id="tb-password" placeholder="Password">
+            </div>
+            <button id="btn-sign-in" class="btn btn-default">Sign in</button>
+            <div class="checkbox">
+              <label>
               <input type="checkbox"> Remember me
-            </label>
-          </div>
-          <a href="#/users/register"> or Register</a>
-        </form>
-        <form class="form-inline col-md-6" id="container-sign-out">
-          <button id="btn-sign-out" class="btn btn-default">Sign out</button>
-        </form>
-      </div>
-      <nav class="navbar navbar-default zrow">
-        <ul class="nav navbar-nav col-md-8">
-          <li><a href="#/">Home </a></li>
-          <li><a href="#/products/add">Products </a></li>
-          <li><a href="#/messages/add">Messages </a></li>
-          <li><a href="#/profiles">Profiles </a></li>
+              </label>
+            </div>
+            <a href="#/users/register"> or Register</a>
+          </form>
           
-        </ul>
-      </nav>
-    </header>
-    <div id="content" class="container">
+          <!-- LOGOUT -->
+          <form class="form-inline col-md-6" id="container-sign-out">
+            <label id="logged-in-as" for="btn-sign-out"></label>
+            <button id="btn-sign-out" class="btn btn-default">Sign out</button>
+          </form>
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-default zrow">
+          <ul class="nav navbar-nav col-md-8">
+            <li><a href="#/">Home </a></li>
+            <li><a href="#/products/add">Products </a></li>
+            <li><a href="#/messages/add">Messages </a></li>
+            <li><a href="#/profiles">Profiles </a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <!-- CONTENT  HERE -->
+      <div id="content" class="container"></div>
+    
+      <!-- ??? -->
+      <aside id="left"></aside>
 
     </div>
-    <aside id="left">
-
-    </aside>
-
-  </div>
-
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/jquery-ui/jquery-ui.js"></script>
-  <script src="bower_components/sammy/lib/sammy.js"></script>
-  <script src="bower_components/handlebars/handlebars.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="bower_components/toastr/toastr.js"></script>
-
-  <script src="controllers/usersController.js"></script>
-  <script src="controllers/productsController.js"></script>
-  <script src="controllers/homeController.js"></script>
-  <script src="controllers/messagesController.js"></script>
-  <script src="templates.js"></script>
-  <script src="app.js"></script>
-  <script src="data.js"></script>
-  <script src="json-requester.js"></script>
 
 
-</body>
+    <!-- EXTERNAL LIBS -->
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="./bower_components/sammy/lib/sammy.js"></script>
+    <script src="./bower_components/handlebars/handlebars.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./bower_components/toastr/toastr.js"></script>
+    <script src="./bower_components/cryptojs-sha1/cryptojs-sha1.js"></script>
+
+
+    <!-- APP HELPERS -->
+    <script src="./js/json-requester.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/templates.js"></script>
+
+    <!-- APP CONTROLLERS -->
+    <script src="./js/controllers/usersController.js"></script>
+    <script src="./js/controllers/productsController.js"></script>
+    <script src="./js/controllers/homeController.js"></script>
+    <script src="./js/controllers/messagesController.js"></script>
+
+    <!-- APP -->
+    <script src="./js/app.js"></script>
+
+  </body>
+
 </html>

@@ -1,7 +1,7 @@
 var productsController = (function() {
 
   function all(context) {
-   var products;
+    var products;
     data.products.get()
       .then(function(resProducts) {
         products = resProducts;
@@ -9,29 +9,29 @@ var productsController = (function() {
       })
       .then(function(template) {
         context.$element().html(template());
-  });   
+      });
   }
 
-    function add(context) {
+  function add(context) {
     templates.get('product-add')
       .then(function(template) {
-        context.$element().html(template());     
+        context.$element().html(template());
 
-        $('#btn-product-add').on('click', function() {       
+        $('#btn-product-add').on('click', function() {
 
           var product = {
             title: $('#tb-product-title').val(),
-            description: $('#tb-product-description').val()       
+            description: $('#tb-product-description').val()
           };
 
-          product-controller.add(product)
+          product - controller.add(product)
             .then(function(product) {
-              toastr.success(`Product "${product.title}" added!`);          
+              toastr.success(`Product "${product.title}" added!`);
             });
         });
-    });
-    }
-  
+      });
+  }
+
   return {
     all: all,
     add: add

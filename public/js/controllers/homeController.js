@@ -1,4 +1,3 @@
-
 var homeController = function() {
 
   function all(context) {
@@ -7,7 +6,7 @@ var homeController = function() {
         context.$element().html(template());
       });
   }
-  
+
   return {
     all: all
   };

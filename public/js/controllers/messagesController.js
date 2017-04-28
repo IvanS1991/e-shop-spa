@@ -1,7 +1,7 @@
 var messagesController = (function() {
 
   function all(context) {
-   var products;
+    var products;
     data.messages.get()
       .then(function(resMess) {
         messages = resMess;
@@ -9,29 +9,29 @@ var messagesController = (function() {
       })
       .then(function(template) {
         context.$element().html(template());
-  });   
+      });
   }
 
-    function add(context) {
+  function add(context) {
     templates.get('message-add')
       .then(function(template) {
-        context.$element().html(template());     
+        context.$element().html(template());
 
-        $('#btn-message-add').on('click', function() {       
+        $('#btn-message-add').on('click', function() {
 
           var product = {
             title: $('#tb-message-title').val(),
-            description: $('#tb-message-description').val()       
+            description: $('#tb-message-description').val()
           };
 
-          msg-controller.add(message)
+          msg - controller.add(message)
             .then(function(message) {
-              toastr.success(`Message "${message.title}" added!`);          
+              toastr.success(`Message "${message.title}" added!`);
             });
         });
-    });
-    }
-  
+      });
+  }
+
   return {
     all: all,
     add: add
