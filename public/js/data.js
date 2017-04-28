@@ -1,7 +1,6 @@
 var data = (function() {
-  const LOCAL_STORAGE_USERNAME_KEY = 'signed-in-user-username',
-    LOCAL_STORAGE_PASSWORD_KEY = 'signed-in-user-password',
-    LOCAL_STORAGE_AUTH_KEY = 'signed-in-user-auth-key';
+  const LOCAL_STORAGE_USERNAME_KEY = 'LOGIN_USERNAME',
+    LOCAL_STORAGE_AUTH_KEY = 'LOGIN_AUTHKEY';
 
   // U S E R S
   function register(user) {
@@ -10,13 +9,15 @@ var data = (function() {
       passHash: CryptoJS.SHA1(user.password).toString()
     };
 
-    return jsonRequester.post('/api/users', {
-        data: reqUser
-      })
+    var options = {
+      data: reqUser
+    }
+
+    return jsonRequester.post('/api/users', options)
       .then(function(resp) {
-        alert("success");
-      }, function(error) {
-        alert(error);
+        localStorage.setItem(LOCAL_STORAGE_AUTH_KEY, resp.authKey);
+        localStorage.setItem(LOCAL_STORAGE_USERNAME_KEY, resp.username);
+        return resp;
       });
   }
 
@@ -25,8 +26,6 @@ var data = (function() {
       username: user.username,
       passHash: CryptoJS.SHA1(user.password).toString()
     };
-
-    console.log(reqUser);
 
     var options = {
       data: reqUser
@@ -76,31 +75,23 @@ var data = (function() {
       }
     };
 
-    return jsonRequester.post('api/products', options)
+    return jsonRequester.post('/api/products', options)
       .then(function(resp) {
         return resp.result;
       });
   }
 
   function productsGet() {
-    var options = {
-      headers: {
-        'x-auth-key': localStorage.getItem(LOCAL_STORAGE_PASSWORD_KEY)
-      }
-    };
-    return jsonRequester.get('api/products', options)
-      .then(function(res) {
-        return res.result;
-      });
+    return jsonRequester.get('/api/products');
   }
 
   function productsGetById(id) {
     var options = {
       headers: {
-        'x-auth-key': localStorage.getItem(LOCAL_STORAGE_PASSWORD_KEY)
+        'x-auth-key': localStorage.getItem(LOCAL_STORAGE_AUTH_KEY)
       }
     };
-    return jsonRequester.get('api/products/' + id, options)
+    return jsonRequester.get('/api/products/' + id, options)
       .then(function(res) {
         return res.result;
       });
@@ -119,7 +110,7 @@ var data = (function() {
       }
     };
 
-    return jsonRequester.post('api/messages', options)
+    return jsonRequester.post('/api/messages', options)
       .then(function(resp) {
         return resp.result;
       });
@@ -128,10 +119,10 @@ var data = (function() {
   function messagesGet() {
     var options = {
       headers: {
-        'x-auth-key': localStorage.getItem(LOCAL_STORAGE_PASSWORD_KEY)
+        'x-auth-key': localStorage.getItem(LOCAL_STORAGE_AUTH_KEY)
       }
     };
-    return jsonRequester.get('api/messages', options)
+    return jsonRequester.get('/api/messages', options)
       .then(function(res) {
         return res.result;
       });

@@ -41,7 +41,6 @@ var jsonRequester = (function() {
   }
 
   return {
-    send: send,
     get: get,
     post: post,
     put: put,

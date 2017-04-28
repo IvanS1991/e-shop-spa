@@ -4,12 +4,22 @@
       "username": "ivan",
       "usernameToLower": "ivan",
       "passHash": "2891baceeef1652ee698294da0e71ba78a2a4064",
-      "userId": "WJ5WUPTksrS6ZWxAvsioPcktkO4sSIHaA4sjlqZLzmfPyOfyhv5rDBDQXgJg",
-      "authKey": "ivanjjxISvBH92kLB5NoE6PjuUVMgaTpwg3bU9NbQoe5Itt7U4RYCva1N8DUDdNm",
+      "userId": "xt98LrdEYcfiych4FrhErJEWAaJ3DZqE2HX6C0ITMyHVxm8mNUx75yy58DTU",
+      "authKey": "ivankyE7VTalAHwpkgN74nV2r69ufJxy20wi8pUPNxQZT0UMb44ODO51VdlKvUqE",
       "cash": 0,
-      "created": "28-04-2017 / 14:04:43"
+      "created": "28-04-2017 / 17:38:18"
     }
   ],
   "messages": [],
-  "products": []
+  "products": [
+    {
+      "title": "bidon",
+      "description": "za zele",
+      "category": "polezni neshta",
+      "price": 36,
+      "productId": "PRODbBrzXjPTZwvqUnc5Cs5a0OM1oME9u3bOWwYa5UxlE795Rv7MOLKk28bzGU4L",
+      "sellerId": "xt98LrdEYcfiych4FrhErJEWAaJ3DZqE2HX6C0ITMyHVxm8mNUx75yy58DTU",
+      "created": "28-04-2017 / 17:38:41"
+    }
+  ]
 }

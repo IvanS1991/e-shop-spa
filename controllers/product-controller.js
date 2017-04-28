@@ -3,14 +3,23 @@ module.exports = function(db) {
     let factory = require("../utils/factory");   
 
     let get = function(request, response) {
-        //TODO
+        let products = db.get("products")
+                        .value();
+
+        response.json({
+            products: products
+        });
     };
 
     let create = function(request, response) {
-        let productData = request.body;
+        let productData = request.body.product;
+
+        console.log(productData);
+
+        let authKey = request.headers["x-auth-key"];
 
         let seller = db.get("users")
-                    .find({authKey: productData.authKey})
+                    .find({authKey: authKey})
                     .value();
 
         if (seller) {
@@ -37,6 +46,8 @@ module.exports = function(db) {
     let remove = function(request, response) {
         let productData = request.body;
 
+        let authKey = request.headers["x-auth-key"];
+
         let product = db.get("products")
                     .find({productId: productData.productId})
                     .value();
@@ -46,7 +57,7 @@ module.exports = function(db) {
                     .value();
 
         let seller = db.get("users")
-                    .find({authKey: productData.authKey})
+                    .find({authKey: authKey})
                     .value();
         
         if (seller.userId === product.sellerId) {

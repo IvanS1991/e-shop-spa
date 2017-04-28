@@ -64,27 +64,27 @@ When a product is sold, the seller gets his "cash" updated.
     * request data - none, response data - {messages: [...]}
 
     - POST      /api/messages            - send a new message
-      * request data - {authKey:... , title:... , content:... , recipientId:...}, response data - {msgId:...}
+      * request data - {title:... , content:... , recipientId:...}, response data - {msgId:...}
 
     - DELETE    /api/messages             - delete a message
-      * request data - {authKey:... , msgId:...}, response data - {authorId:...}
+      * request data - {msgId:...}, response data - {authorId:...}
 
   * Products - 2/4
     - GET       /api/products   - get products info (filtered with queries pCategory and pTitle, get single product with query productId)
       * request data - none, response data - {products: [...]}
 
     - POST      /api/products   - post a new product
-      * request data - {authKey:... , title:... , description:... , category:... , price:...}, response data - {productId:...}
+      * request data - {title:... , description:... , category:... , price:...}, response data - {productId:...}
 
     - PUT       /api/products   - update a product details
-      * request data - {authKey:... , options: {...}}, response data - {productId:...}
+      * request data - {options: {...}}, response data - {productId:...}
 
     - DELETE    /api/products   - delete a product
-      * request data - {authKey:... , productId:...}, response data - {sellerId:...}
+      * request data - {productId:...}, response data - {sellerId:...}
 
   * Order - 0/1
     - POST      /api/orders     - post a new order
-      * request data - {authKey:... , products: [productId 1, productId 2...]}, response data - {cost:...}
+      * request data - {products: [productId 1, productId 2...]}, response data - {cost:...}
 
 # Libraries/frameworks
   * Client

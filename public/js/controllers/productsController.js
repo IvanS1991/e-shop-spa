@@ -8,7 +8,7 @@ var productsController = (function() {
         return templates.get('products')
       })
       .then(function(template) {
-        context.$element().html(template());
+        context.$element().html(template(products));
       });
   }
 
@@ -21,12 +21,14 @@ var productsController = (function() {
 
           var product = {
             title: $('#tb-product-title').val(),
-            description: $('#tb-product-description').val()
+            description: $('#tb-product-description').val(),
+            category: $('#tb-product-category').val(),
+            price: Number($('#tb-product-price').val())
           };
 
-          product - controller.add(product)
-            .then(function(product) {
-              toastr.success(`Product "${product.title}" added!`);
+          data.products.add(product)
+            .then(function(resp) {
+              toastr.success(resp);
             });
         });
       });

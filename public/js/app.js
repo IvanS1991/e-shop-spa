@@ -7,7 +7,7 @@
 
     this.get('#/home', homeController.all);
 
-    this.get('#/products', productsController.get);
+    this.get('#/products', productsController.all);
     this.get('#/products/add', productsController.add);
     this.get('#/product/:id', productsController.getById);
 
@@ -24,7 +24,7 @@
     sammyApp.run('#/');
     if (data.users.hasUser()) {
       $('#container-sign-in').addClass('hidden');
-      $('#logged-in-as').html("Logged in as " + localStorage.getItem("signed-in-user-username"));
+      $('#logged-in-as').html("Logged in as " + localStorage.getItem("LOGIN_USERNAME"));
       $('#btn-sign-out').on('click', function(e) {
         e.preventDefault();
         data.users.signOut()
