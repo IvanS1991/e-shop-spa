@@ -1,13 +1,17 @@
 <fieldset>
-  <legend>Add message</legend>
+  <legend>Send message</legend>
+  <div class="form-group">
+    <label for="tb-message-recipient">To user:</label>
+  <input type="text" class="form-control" id="tb-message-recipient" />
+  </div>
   <div class="form-group">
     <label for="tb-message-title">Title:</label>
-    <input type="text" class="form-control" id="tb-product-title" />
+    <input type="text" class="form-control" id="tb-message-title" />
   </div>
   <div class="form-group">
-    <label for="tb-event-content">Content</label>
-    <input type="text" id="tb-product-content" class="form-control" />
+    <label for="tb-message-content">Content</label>
+    <input type="text" id="tb-message-content" class="form-control" />
   </div>
  
-  <button class="form-control btn btn-primary" id="btn-message-add">Add</button>
+  <button class="btn btn-default" id="btn-message-add">Send</button>
 </fieldset>

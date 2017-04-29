@@ -1,14 +1,14 @@
 var messagesController = (function() {
 
   function all(context) {
-    var products;
+    var messages;
     data.messages.get()
       .then(function(resMess) {
         messages = resMess;
-        return templates.get('messages')
+        return templates.get('messages');
       })
       .then(function(template) {
-        context.$element().html(template());
+        context.$element().html(template(messages));
       });
   }
 
@@ -21,12 +21,13 @@ var messagesController = (function() {
 
           var product = {
             title: $('#tb-message-title').val(),
-            description: $('#tb-message-description').val()
+            description: $('#tb-message-description').val(),
+            recipient:$('#tb-message-recipient').val()
           };
 
-          msg - controller.add(message)
+          data.messages.add(message)
             .then(function(message) {
-              toastr.success(`Message "${message.title}" added!`);
+              toastr.success(`Message successfully send!`);
             });
         });
       });

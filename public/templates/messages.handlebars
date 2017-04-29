@@ -1,11 +1,17 @@
 <h2>Messages</h2>
-
-  {{#each this}}
+  <nav class="navbar navbar-default zrow">
+    <ul class="nav navbar-nav col-md-8">
+        <li><a href="#/messages/add">Send new message</a></li>
+        <li><a href="#/messages/sent">Sent messages</a></li>
+        <li><a href="#/messages/recieved">Recieved messages</a></li>
+    </ul>
+  </nav> 
+  {{#each messages}}
     <div class="event-box" data-id="{{id}}">
-      <h4>{{title}}
-        <small><a href="#" class="btn-cancel">X</a></small>
-      </h4>
-      <p>{{content}}</p>
+      <h2>Title: {{title}}</h2>
+      <h3>Content: {{content}} </h3>
+      <p>Recipient: {{recipient}}</p>
     </div>
+    <hr>
   {{/each}}
 

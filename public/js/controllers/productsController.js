@@ -5,7 +5,7 @@ var productsController = (function() {
     data.products.get()
       .then(function(resProducts) {
         products = resProducts;
-        return templates.get('products')
+        return templates.get('products');
       })
       .then(function(template) {
         context.$element().html(template(products));
@@ -27,8 +27,8 @@ var productsController = (function() {
           };
 
           data.products.add(product)
-            .then(function(resp) {
-              toastr.success(resp);
+            .then(function(product) {
+              toastr.success(`Product successfully added!`);
             });
         });
       });

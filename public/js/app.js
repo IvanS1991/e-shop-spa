@@ -11,7 +11,7 @@
     this.get('#/products/add', productsController.add);
     this.get('#/product/:id', productsController.getById);
 
-    this.get('#/messages', messagesController.get);
+    this.get('#/messages', messagesController.all);
     this.get('#/messages/add', messagesController.add);
 
     this.get('#/profiles', usersController.all);

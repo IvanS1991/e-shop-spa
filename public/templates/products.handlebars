@@ -1,6 +1,10 @@
 <h1>Products</h2>
-<hr>
-
+  <nav class="navbar navbar-default zrow">
+    <ul class="nav navbar-nav col-md-8">
+        <li><a href="#/products/add">Add new product</a></li>
+    </ul>
+  </nav>    
+  <hr>
   {{#each products}}
     <div class="event-box" data-id="{{id}}">
       <h2>Title: {{title}}</h2>
@@ -8,7 +12,7 @@
       <h4>Description: {{description}}</h4>
       <p>Category: {{category}}</p>
       <p>Seller: {{seller}}</p>
-      <button data-product-id="{{productId}}">Add to cart</button>
+      <button data-product-id="{{productId}}" class="btn btn-default">Add to cart</button>
     </div>
     <hr>
   {{/each}}

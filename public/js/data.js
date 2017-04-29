@@ -11,7 +11,7 @@ var data = (function() {
 
     var options = {
       data: reqUser
-    }
+    };
 
     return jsonRequester.post('/api/users', options)
       .then(function(resp) {
@@ -117,12 +117,16 @@ var data = (function() {
   }
 
   function messagesGet() {
+    return jsonRequester.get('/api/messages');
+  }
+
+  function messagesGetById() {
     var options = {
       headers: {
         'x-auth-key': localStorage.getItem(LOCAL_STORAGE_AUTH_KEY)
       }
     };
-    return jsonRequester.get('/api/messages', options)
+    return jsonRequester.get('/api/messages/' +id, options)
       .then(function(res) {
         return res.result;
       });
@@ -144,7 +148,8 @@ var data = (function() {
     },
     messages: {
       add: messagesAdd,
-      get: messagesGet
+      get: messagesGet,
+      getById: messagesGetById
     }
   };
 }());
