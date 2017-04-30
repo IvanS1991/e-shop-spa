@@ -26,6 +26,15 @@
       "authKey": "cykaZMXtuUcj4bEYSCU50C4gaQzPOI7DZKjSCb6f03SUTxD6UhAyhfT7Cdudga21",
       "cash": 0,
       "created": "30-04-2017 / 21:07:22"
+    },
+    {
+      "username": "pesho",
+      "usernameToLower": "pesho",
+      "passHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "userId": "DK7oEJRPWgv8wIlBjsQGRPNxXGMogOXJYDkss0g4t54ErannpJq1GP8aunje",
+      "authKey": "peshouUgd8Xfme7sg2CumJLRYP53qny4NNb4x5EHLdw4Uuhcfn1803gmacU2ApVEj",
+      "cash": 0,
+      "created": "30-04-2017 / 22:24:12"
     }
   ],
   "messages": [
@@ -71,6 +80,17 @@
       "recipient": "ivan",
       "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
       "created": "30-04-2017 / 21:39:42",
+      "seen": false
+    },
+    {
+      "title": "hello",
+      "content": "message content",
+      "msgId": "MSGcuELayrvWXF7ZjRwNwCt7lJiGIWFS7CmL29tri7uW5xkAS1HftDTRbJhj9aq",
+      "author": "pesho",
+      "authorId": "DK7oEJRPWgv8wIlBjsQGRPNxXGMogOXJYDkss0g4t54ErannpJq1GP8aunje",
+      "recipient": "luba",
+      "recipientId": "NyGdGlqE1btCKiJE5s2tbtX1nHjizcqoaORzVudbMIF6rXLwR1LpxkCUETo3",
+      "created": "30-04-2017 / 22:24:31",
       "seen": false
     }
   ],

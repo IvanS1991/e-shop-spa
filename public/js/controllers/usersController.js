@@ -25,14 +25,35 @@ var usersController = function() {
 
           data.users.register(user)
             .then(function() {
-              document.location.hash = "/";
+              document.location = '#/';
+              document.location.reload(true);
             });
         });
       });
   }
 
+  function login(context) {
+    templates.get('login')
+      .then(function(template) {
+        context.$element().html(template());
+
+      $('#btn-sign-in').on('click', function() {
+
+        var user = {
+          username: $('#tb-username').val(),
+          password: $('#tb-password').val()
+        };
+        data.users.signIn(user)
+          .then(function(user) {
+            document.location = '#/';
+            document.location.reload(true);
+  });
+});
+});
+}
   return {
     all: all,
-    register: register
+    register: register,
+    login: login
   };
 }();
