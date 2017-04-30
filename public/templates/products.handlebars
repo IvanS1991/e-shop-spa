@@ -1,7 +1,8 @@
 <h1>Products</h2>
-  <nav class="navbar navbar-default zrow">
+  <nav class="navbar navbar-inverse zrow">
     <ul class="nav navbar-nav col-md-8">
         <li><a href="#/products/add">Add new product</a></li>
+        <li><a href="#/products/search">Search for product</a></li>
     </ul>
   </nav>    
   <hr>
@@ -12,7 +13,7 @@
       <h4>Description: {{description}}</h4>
       <p>Category: {{category}}</p>
       <p>Seller: {{seller}}</p>
-      <button data-product-id="{{productId}}" class="btn btn-default">Add to cart</button>
+      <button data-product-id="{{productId}}" class="btn btn-primary">Add to cart</button>
     </div>
     <hr>
   {{/each}}
