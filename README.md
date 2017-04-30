@@ -56,7 +56,7 @@ When a product is sold, the seller gets his "cash" updated.
     - GET       /api/profiles   - get an user's profile (no query for own profile, query userId for other users' profiles)
       * request data: none, response data - {username:... , created:... , products: [...]} 
 
-  * Messages - 2/4
+  * Messages - 4/4
     - GET       /api/messages/sent       - get all RECEIVED messages (get a single message if query msgId is provided)
       * request data - none, response data - {messages: [...]}
 

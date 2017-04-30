@@ -17,36 +17,73 @@
       "authKey": "lubawLxU4XQZQVBGSBc77jJ9c0tNHJsMfjgiAwW5zMm5vM7Apd1sFGr9g0CYn0qk",
       "cash": 0,
       "created": "29-04-2017 / 10:58:47"
+    },
+    {
+      "username": "cyka",
+      "usernameToLower": "cyka",
+      "passHash": "403731b1addabb637b60c0c60707212af0523866",
+      "userId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
+      "authKey": "cykaZMXtuUcj4bEYSCU50C4gaQzPOI7DZKjSCb6f03SUTxD6UhAyhfT7Cdudga21",
+      "cash": 0,
+      "created": "30-04-2017 / 21:07:22"
     }
   ],
-  "messages": [],
+  "messages": [
+    {
+      "title": "asd123",
+      "content": "dsa",
+      "msgId": "MSGeIeKWG69VSUvvNtTafQJOx6YprxuF8Ivj88zfb3KzpJFU8Hs07EhZOmweVOR",
+      "author": "ivan",
+      "authorId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "recipient": "cyka",
+      "recipientId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
+      "created": "30-04-2017 / 21:39:00",
+      "seen": false
+    },
+    {
+      "title": "bidoni prodavam",
+      "content": "kupi si",
+      "msgId": "MSGJHLM7otMLEvmTHP6YTver0IiLXb5ddbuG8yyDcU1JtNbTRL1GiEPqk8ndz2u",
+      "author": "ivan",
+      "authorId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "recipient": "luba",
+      "recipientId": "NyGdGlqE1btCKiJE5s2tbtX1nHjizcqoaORzVudbMIF6rXLwR1LpxkCUETo3",
+      "created": "30-04-2017 / 21:39:08",
+      "seen": false
+    },
+    {
+      "title": "ne kupuvai bidoni",
+      "content": "schupeni sa",
+      "msgId": "MSGqCjThEhmFR2kAik9K9xUsRrAQXuQUui0lRsW0QGFsCpJwCTdkE0kQlPXx9et",
+      "author": "cyka",
+      "authorId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
+      "recipient": "luba",
+      "recipientId": "NyGdGlqE1btCKiJE5s2tbtX1nHjizcqoaORzVudbMIF6rXLwR1LpxkCUETo3",
+      "created": "30-04-2017 / 21:39:32",
+      "seen": false
+    },
+    {
+      "title": "lyjesh",
+      "content": "maimuno mrysna",
+      "msgId": "MSGftdITEZfAKj6z5Fq095ugMr3d2WUeUzNs2J1Ii2kQXfY8k94AGC6XaRwlZSL",
+      "author": "cyka",
+      "authorId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
+      "recipient": "ivan",
+      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "created": "30-04-2017 / 21:39:42",
+      "seen": false
+    }
+  ],
   "products": [
     {
       "title": "bidon",
       "description": "za zele",
       "category": "polezni neshta",
-      "price": 36,
-      "productId": "PRODMjolcTBCdM7R2ruN2oNI0B00hzk17zZea9XL6X8qGwgN1pG0nIisD3e48DbP",
-      "seller": "ivan",
-      "created": "28-04-2017 / 17:54:08"
-    },
-    {
-      "title": "kapachki",
-      "description": "za burkani",
-      "category": "polezni neshta",
-      "price": 2,
-      "productId": "PRODybP1IxRBkToCDP6GLriQrJZH5WUmAqptYQ7rDj7owCstCkFRwQNNtg55anim",
-      "seller": "luba",
-      "created": "29-04-2017 / 11:03:02"
-    },
-    {
-      "title": "sennik",
-      "description": "za predno styklo",
-      "category": "za kolata",
-      "price": 10,
-      "productId": "PRODWCtypbgCXSCqAkW6sNIxn0upP0jzxrWSXAJCowoPnf1BabYlbIOmgHIKq3tI",
-      "seller": "luba",
-      "created": "29-04-2017 / 11:22:09"
+      "price": 55,
+      "productId": "PRODpMzG91Hpgq920aWawRcqVelR3bpNXNBm1bciM2h8JVNTMcdBkKHpH1xW1aFA",
+      "seller": "cyka",
+      "sellerId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
+      "created": "30-04-2017 / 21:25:45"
     }
   ]
 }

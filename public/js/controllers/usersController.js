@@ -25,8 +25,7 @@ var usersController = function() {
 
           data.users.register(user)
             .then(function() {
-              document.location = '#/';
-              document.location.reload(true);
+              document.location.hash = "/";
             });
         });
       });

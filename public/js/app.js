@@ -11,8 +11,10 @@
     this.get('#/products/add', productsController.add);
     this.get('#/product/:id', productsController.getById);
 
-    this.get('#/messages', messagesController.all);
+    this.get('#/messages', messagesController.menu);
     this.get('#/messages/add', messagesController.add);
+    this.get('#/messages/sent', messagesController.checkSent);
+    this.get('#/messages/received', messagesController.checkReceived);
 
     this.get('#/profiles', usersController.all);
     this.get('#/users/register', usersController.register);
@@ -22,34 +24,36 @@
 
   $(function() {
     sammyApp.run('#/');
-    if (data.users.hasUser()) {
-      $('#container-sign-in').addClass('hidden');
-      $('#logged-in-as').html("Logged in as " + localStorage.getItem("LOGIN_USERNAME"));
-      $('#btn-sign-out').on('click', function(e) {
-        e.preventDefault();
-        data.users.signOut()
-          .then(function() {
-            document.location = '#/';
-            document.location.reload(true);
+
+    let loggedIn = function() {
+      templates.get("logged-in-as")
+        .then(function(template) {
+          $("#logged-in-as").html(template(localStorage));
+
+          $("#btn-sign-in").on("click", function() {
+            var user = {
+              username: $('#tb-username').val(),
+              password: $('#tb-password').val()
+            };
+            data.users.signIn(user)
+              .then(function(user) {
+                document.location.hash = '/';
+              }, function(err) {
+                $('#container-sign-in').trigger("reset");
+                toastr.error(err.responseText);
+              });
           });
-      });
-    } else {
-      $('#container-sign-out').addClass('hidden');
-      $('#btn-sign-in').on('click', function(e) {
-        e.preventDefault();
-        var user = {
-          username: $('#tb-username').val(),
-          password: $('#tb-password').val()
-        };
-        data.users.signIn(user)
-          .then(function(user) {
-            document.location = '#/';
-            document.location.reload(true);
-          }, function(err) {
-            $('#container-sign-in').trigger("reset");
-            toastr.error(err.responseText);
+
+          $("#btn-sign-out").on("click", function() {
+            data.users.signOut()
+              .then(function() {
+                document.location.hash = "/";
+              });
           });
-      });
-    }
+        });
+    };
+
+    loggedIn();
+    $(window).on("hashchange", loggedIn);
   });
 }());

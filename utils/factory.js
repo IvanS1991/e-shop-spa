@@ -16,11 +16,13 @@ module.exports = (function() {
     }
 
     class Message {
-        constructor(title, content, authorId, recipientId) {
+        constructor(title, content, author, authorId, recipient, recipientId) {
             this.title = title;
             this.content = content;
             this.msgId = generator.msgId();
+            this.author = author;
             this.authorId = authorId;
+            this.recipient = recipient;
             this.recipientId = recipientId;
             this.created = timeParser(new Date());
             this.seen = false;
@@ -44,12 +46,12 @@ module.exports = (function() {
         return new User(username, passHash);
     }
 
-    function getMessage(title, content, authorId, recipientId) {
-        return new Message(title, content, authorId, recipientId);
+    function getMessage(title, content, author, authorId, recipient, recipientId) {
+        return new Message(title, content, author, authorId, recipient, recipientId);
     }
 
-    function getProduct(title, description, category, price, sellerId) {
-        return new Product(title, description, category, price, sellerId);
+    function getProduct(title, description, category, price, seller, sellerId) {
+        return new Product(title, description, category, price, seller, sellerId);
     }
 
     return {

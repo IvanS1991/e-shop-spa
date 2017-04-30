@@ -99,11 +99,9 @@ var data = (function() {
 
   // M E S S A G E S
   function messagesAdd(message) {
-    var user = getCurrent();
     var options = {
       data: {
-        message,
-        user
+        message
       },
       headers: {
         'x-auth-key': localStorage.getItem(LOCAL_STORAGE_AUTH_KEY)
@@ -116,9 +114,23 @@ var data = (function() {
       });
   }
 
-  function messagesGet() {
-    return jsonRequester.get('/api/messages');
-  }
+  let messagesSent = function() {
+    let options = {
+      headers: {
+        "x-auth-key": localStorage.getItem(LOCAL_STORAGE_AUTH_KEY)
+      }
+    }
+    return jsonRequester.get("/api/messages/sent", options);
+  };
+
+  let messagesReceived = function() {
+    let options = {
+      headers: {
+        "x-auth-key": localStorage.getItem(LOCAL_STORAGE_AUTH_KEY)
+      }
+    }
+    return jsonRequester.get("/api/messages/received", options);
+  };
 
   function messagesGetById() {
     var options = {
@@ -148,7 +160,8 @@ var data = (function() {
     },
     messages: {
       add: messagesAdd,
-      get: messagesGet,
+      getSent: messagesSent,
+      getReceived: messagesReceived,
       getById: messagesGetById
     }
   };

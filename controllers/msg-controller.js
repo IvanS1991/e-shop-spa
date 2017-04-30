@@ -3,23 +3,55 @@ module.exports = function(db) {
     let factory = require("../utils/factory");   
 
     let sent = function(request, response) {
-        //TODO
+        let authKey = request.headers["x-auth-key"];
+
+        let author = db.get("users")
+                        .find({authKey: authKey})
+                        .value();
+
+        let messages = db.get("messages")
+                        .filter({authorId: author.userId})
+                        .value();
+        
+        response.json({
+            messages: messages
+        });
     };
 
     let received = function(request, response) {
-        //TODO
+        let authKey = request.headers["x-auth-key"];
+
+        let recipient = db.get("users")
+                        .find({authKey: authKey})
+                        .value();
+
+        let messages = db.get("messages")
+                        .filter({recipientId: recipient.userId})
+                        .value();
+        
+        response.json({
+            messages: messages
+        });
     };
 
     let create = function(request, response) {
-        let msgData = request.body;
+        let msgData = request.body.message;
+
+        let authKey = request.headers["x-auth-key"];
 
         let author = db.get("users")
-                        .find({authKey: msgData.authKey})
+                        .find({authKey: authKey})
                         .value();
 
         let recipient = db.get("users")
-                            .find({userId: msgData.recipientId})
+                            .find({username: msgData.recipientName})
                             .value();
+
+        if (!recipient) {
+            response.status(404)
+                    .json("Non-existing recipient");
+            return;
+        }
 
         if (author.userId === recipient.userId) {
             response.status(404)
@@ -27,7 +59,7 @@ module.exports = function(db) {
             return;
         }
 
-        let message = factory.getMessage(msgData.title, msgData.content, author.userId, recipient.userId);
+        let message = factory.getMessage(msgData.title, msgData.content, author.username, author.userId, recipient.username, recipient.userId);
         
         db.get("messages")
             .push(message)
