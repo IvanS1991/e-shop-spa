@@ -1,16 +1,15 @@
 var messagesController = (function() {
 
-  let menu = function (context) {
-    templates.get("messages")
-      .then(function(template) {
-        context.$element().html(template());
-      });
-  };
-
   function add(context) {
     templates.get('message-add')
       .then(function(template) {
         context.$element().html(template());
+        
+        let queries = parseQuery(document.location.href);
+        
+        if (queries.hasOwnProperty("recipient")) {
+          $("#tb-message-recipient").val(queries.recipient);
+        }
 
         $('#btn-message-add').on('click', function() {
 
@@ -23,7 +22,7 @@ var messagesController = (function() {
           data.messages.add(message)
             .then(function(message) {
               toastr.success(`Message successfully send!`);
-              document.location = "#/messages";
+              document.location = "#/messages/received";
             }, function(error) {
               console.log(error);
               toastr.error(error);
@@ -57,7 +56,6 @@ var messagesController = (function() {
   };
 
   return {
-    menu: menu,
     add: add,
     checkReceived,
     checkSent

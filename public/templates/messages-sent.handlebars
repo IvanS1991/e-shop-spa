@@ -1,11 +1,12 @@
 <h1>Sent messages</h1>
 <nav class="navbar navbar-inverse zrow">
     <ul class="nav navbar-nav col-md-8">
-        <li><a href="#/messages/add">Send new message</a></li>
-        <li><a href="#/messages/sent">Sent messages</a></li>
         <li><a href="#/messages/received">Recieved messages</a></li>
+        <li><a href="#/messages/sent">Sent messages</a></li>
+        <li><a href="#/messages/add">Send new message</a></li>
     </ul>
   </nav>
+{{#if messages}}
 {{#each messages}}
     <hr>
     <h2>Title: {{title}}</h2>
@@ -13,3 +14,6 @@
     <h4>{{content}}</h4>
     <h4>Sent at: {{created}}</h4>
 {{/each}}
+{{else}}
+    <h2>You have not sent any messages!</h2>
+{{/if}}

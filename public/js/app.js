@@ -11,7 +11,6 @@
     this.get('#/products/add', productsController.add);
     this.get('#/product/:id', productsController.getById);
 
-    this.get('#/messages', messagesController.menu);
     this.get('#/messages/add', messagesController.add);
     this.get('#/messages/sent', messagesController.checkSent);
     this.get('#/messages/received', messagesController.checkReceived);

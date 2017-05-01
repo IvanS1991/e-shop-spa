@@ -35,6 +35,24 @@
       "authKey": "peshouUgd8Xfme7sg2CumJLRYP53qny4NNb4x5EHLdw4Uuhcfn1803gmacU2ApVEj",
       "cash": 0,
       "created": "30-04-2017 / 22:24:12"
+    },
+    {
+      "username": "tosho",
+      "usernameToLower": "tosho",
+      "passHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "userId": "BbKQn0F4ilXcTgad1v5ccB1ixb6FknBV8XOCJ8zKE9qz9F6cpbY3s5U4oBTd",
+      "authKey": "toshoSJxXjI2cgcEpUaXcYF3YRdQTTMsgpiMMG6R2EJQ8FqVCi9IleCKW1t7feVNt",
+      "cash": 0,
+      "created": "01-05-2017 / 14:11:18"
+    },
+    {
+      "username": "testreg",
+      "usernameToLower": "testreg",
+      "passHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "userId": "ybVKF6bGio5jUw9qpAHe8kBsRt2E7gx3l751ZgOjnFG7TphXb0fePX2fTqoL",
+      "authKey": "testregtTdCRNa4L28Enil0TVFCHhGfDoIwxmG52H8uH3zGKT0IPrqFsy4cC0u7kZAQ",
+      "cash": 0,
+      "created": "01-05-2017 / 14:28:21"
     }
   ],
   "messages": [
@@ -91,6 +109,50 @@
       "recipient": "luba",
       "recipientId": "NyGdGlqE1btCKiJE5s2tbtX1nHjizcqoaORzVudbMIF6rXLwR1LpxkCUETo3",
       "created": "30-04-2017 / 22:24:31",
+      "seen": false
+    },
+    {
+      "title": "test msg 123",
+      "content": "test testing",
+      "msgId": "MSG7FpL5u9hDvbw7UIDs57zKUqM3MLt2sDWp83YAsURB8FCEAH9qkQpkeKU4GWM",
+      "author": "testreg",
+      "authorId": "ybVKF6bGio5jUw9qpAHe8kBsRt2E7gx3l751ZgOjnFG7TphXb0fePX2fTqoL",
+      "recipient": "ivan",
+      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "created": "01-05-2017 / 14:28:37",
+      "seen": false
+    },
+    {
+      "title": "test msg 123",
+      "content": "test testing",
+      "msgId": "MSGO0P3irMxSTZFaNzDzSIRaqgglHwl1IZl1gaTkZy7Wqs1pO40Ty8XC4dAX8BE",
+      "author": "testreg",
+      "authorId": "ybVKF6bGio5jUw9qpAHe8kBsRt2E7gx3l751ZgOjnFG7TphXb0fePX2fTqoL",
+      "recipient": "ivan",
+      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "created": "01-05-2017 / 14:29:06",
+      "seen": false
+    },
+    {
+      "title": "asdf",
+      "content": "123",
+      "msgId": "MSG7KLiPp1dcHnZU0JmIvLuyg1aGBOvyd9Rs2l6xL2P9MuHPBVSNHbIOqwKhXQU",
+      "author": "testreg",
+      "authorId": "ybVKF6bGio5jUw9qpAHe8kBsRt2E7gx3l751ZgOjnFG7TphXb0fePX2fTqoL",
+      "recipient": "ivan",
+      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "created": "01-05-2017 / 14:29:22",
+      "seen": false
+    },
+    {
+      "title": "dobre be",
+      "content": "dobre",
+      "msgId": "MSG6tFfsVS7bRPJHZnGkISElg9bw7TIyyLXyUeUbdJZfUnhPJWEdHFSLUwSQIj0",
+      "author": "ivan",
+      "authorId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "recipient": "testreg",
+      "recipientId": "ybVKF6bGio5jUw9qpAHe8kBsRt2E7gx3l751ZgOjnFG7TphXb0fePX2fTqoL",
+      "created": "01-05-2017 / 14:29:52",
       "seen": false
     }
   ],

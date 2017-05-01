@@ -81,17 +81,17 @@ var data = (function() {
       });
   }
 
-  function productsGet() {
+  function productsGet(query) {
     return jsonRequester.get('/api/products');
   }
 
-  function productsGetById(id) {
+  function productsGetByQuery(query) {
     var options = {
       headers: {
         'x-auth-key': localStorage.getItem(LOCAL_STORAGE_AUTH_KEY)
       }
     };
-    return jsonRequester.get('/api/products/' + id, options)
+    return jsonRequester.get('/api/products' + query, options)
       .then(function(res) {
         return res.result;
       });
@@ -156,7 +156,7 @@ var data = (function() {
     products: {
       add: productsAdd,
       get: productsGet,
-      getById: productsGetById
+      getByQuery: productsGetByQuery
     },
     messages: {
       add: messagesAdd,
