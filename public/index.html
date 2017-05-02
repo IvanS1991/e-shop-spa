@@ -19,7 +19,7 @@
       <!-- HEADER -->
       <header class="container">
         <div class="row">
-          <h1 class="page-header col-md-6">E-Shop</h1>
+          <h1 class="page-header col-md-6">E-Shop - <a href="https://github.com/Team-Dragonfruit/e-shop-spa">GitHub</a></h1>
 
           <!-- LOGGED IN AS -->
           <div id="logged-in-as"></div>
@@ -30,8 +30,8 @@
           <ul class="nav navbar-nav col-md-8">
             <li><a href="#/">Home</a></li>
             <li><a href="#/products">Products</a></li>
-            <li><a href="#/messages/received">Message box</a></li>
-            <li><a href="#/profiles">Profiles </a></li>
+            <li><a href="#/messages/received" class="logged-in-menu">Message box</a></li>
+            <li><a href="#/profiles" class="logged-in-menu">Profiles </a></li>
           </ul>
         </nav>
       </header>
@@ -56,6 +56,7 @@
 
 
     <!-- APP HELPERS -->
+    <script src="./js/validator.js"></script>
     <script src="./js/parse-query.js"></script>
     <script src="./js/json-requester.js"></script>
     <script src="./js/data.js"></script>

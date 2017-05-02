@@ -7,13 +7,16 @@
     </ul>
   </nav>
 {{#if messages}}
+<div id="accordion">
 {{#each messages}}
-    <hr>
-    <h2>Title: {{title}}</h2>
-    <h3>Received from: {{author}}</h3>
-    <h4>{{content}}</h4>
-    <h4>Received at: {{created}}</h4>
+    <h2>From: {{author}} | Title: {{title}} | Received at: {{created}}</h2>
+    <div>
+        <h3>{{content}}</h3>
+        <hr>
+        <a href="#/messages/add?recipient={{author}}">Reply</a>
+    </div>
 {{/each}}
+</div>
 {{else}}
     <h2>You have not received any messages!</h2>
 {{/if}}

@@ -2,17 +2,29 @@ var productsController = (function() {
 
   function all(context) {
     var products;
+    let categoryFilter = parseQuery(document.location.href).category;
+
     data.products.get()
-      .then(function(resProducts) {
-        products = resProducts;
+      .then(function(res) {
+        if (categoryFilter) {
+          categoryFilter = decodeURIComponent(categoryFilter);
+          res.products = res.products.filter(x => x.category === categoryFilter);
+        }
+        products = res;
         return templates.get('products');
       })
       .then(function(template) {
         context.$element().html(template(products));
+
+        $("#accordion").accordion({
+          collapsible: true,
+          active: false
+        });
       });
   }
 
   function add(context) {
+    validator.auth();
     templates.get('product-add')
       .then(function(template) {
         context.$element().html(template());
@@ -28,7 +40,10 @@ var productsController = (function() {
 
           data.products.add(product)
             .then(function(product) {
+              context.redirect("#/products");
               toastr.success(`Product successfully added!`);
+            }, function(error) {
+              toastr.error(error.responseText);
             });
         });
       });

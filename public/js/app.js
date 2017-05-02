@@ -25,6 +25,12 @@
     sammyApp.run('#/');
 
     let loggedIn = function() {
+      if (localStorage.getItem("LOGIN_AUTHKEY")) {
+        $(".logged-in-menu").removeClass("hidden");
+      } else {
+        $(".logged-in-menu").addClass("hidden");
+      }
+
       templates.get("logged-in-as")
         .then(function(template) {
           $("#logged-in-as").html(template(localStorage));
@@ -46,7 +52,7 @@
           $("#btn-sign-out").on("click", function() {
             data.users.signOut()
               .then(function() {
-                document.location.hash = "/";
+                document.location.hash = "#/";
               });
           });
         });

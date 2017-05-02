@@ -21,11 +21,10 @@ var messagesController = (function() {
 
           data.messages.add(message)
             .then(function(message) {
+              context.redirect("#/messages/received");
               toastr.success(`Message successfully send!`);
-              document.location = "#/messages/received";
             }, function(error) {
-              console.log(error);
-              toastr.error(error);
+              toastr.error(error.responseText);
             });
         });
       });
@@ -40,6 +39,11 @@ var messagesController = (function() {
       })
       .then(function(template) {
         context.$element().html(template(messages));
+
+        $("#accordion").accordion({
+          collapsible: true,
+          active: false
+        });
       });
   };
 
@@ -52,6 +56,11 @@ var messagesController = (function() {
       })
       .then(function(template) {
         context.$element().html(template(messages));
+
+        $("#accordion").accordion({
+          collapsible: true,
+          active: false
+        });
       });
   };
 

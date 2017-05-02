@@ -7,13 +7,14 @@
     </ul>
   </nav>
 {{#if messages}}
+<div id="accordion">
 {{#each messages}}
-    <hr>
-    <h2>Title: {{title}}</h2>
-    <h3>Sent to: {{recipient}}</h3>
-    <h4>{{content}}</h4>
-    <h4>Sent at: {{created}}</h4>
+    <h2>To: {{recipient}} | Title: {{title}} | Sent at: {{created}}</h2>
+    <div>
+        <h3>{{content}}</h3>
+    </div>
 {{/each}}
+</div>
 {{else}}
     <h2>You have not sent any messages!</h2>
 {{/if}}

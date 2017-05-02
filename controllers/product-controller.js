@@ -6,9 +6,17 @@ module.exports = function(db) {
         let products = db.get("products")
                         .value();
 
-        response.json({
-            products: products
-        });
+        let categories = db.get("products")
+                        .map(x => x.category)
+                        .uniq()
+                        .sort()
+                        .value();
+
+        response.status(200)
+            .json({
+                categories: categories,
+                products: products
+            });
     };
 
     let create = function(request, response) {

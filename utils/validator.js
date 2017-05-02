@@ -1,22 +1,18 @@
 module.exports = (function() {
 
-    let valid = {
+    let err = {
         //TODO
     };
 
-    let messages = {
+    let user = function(userData, response) {
         //TODO
     };
 
-    let user = {
+    let msg = function(msgData, response) {
         //TODO
     };
 
-    let msg = {
-        //TODO
-    };
-
-    let product = {
+    let product = function(productData, response) {
         //TODO
     };
 

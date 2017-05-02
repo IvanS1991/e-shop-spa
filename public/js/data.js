@@ -4,6 +4,7 @@ var data = (function() {
 
   // U S E R S
   function register(user) {
+    validator.user(user);
     var reqUser = {
       username: user.username,
       passHash: CryptoJS.SHA1(user.password).toString()
@@ -65,6 +66,7 @@ var data = (function() {
   // P R O D U C T S
   function productsAdd(product) {
     var user = getCurrent();
+    validator.product(product);
     var options = {
       data: {
         product,
@@ -99,6 +101,7 @@ var data = (function() {
 
   // M E S S A G E S
   function messagesAdd(message) {
+    validator.msg(message);
     var options = {
       data: {
         message
@@ -108,10 +111,7 @@ var data = (function() {
       }
     };
 
-    return jsonRequester.post('/api/messages', options)
-      .then(function(resp) {
-        return resp.result;
-      });
+    return jsonRequester.post('/api/messages', options);
   }
 
   let messagesSent = function() {

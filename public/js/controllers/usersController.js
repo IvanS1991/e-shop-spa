@@ -20,13 +20,15 @@ var usersController = function() {
         $('#btn-register').on('click', function() {
           var user = {
             username: $('#tb-reg-username').val(),
-            password: $('#tb-reg-pass').val()
+            password: $('#tb-reg-password').val()
           };
 
           data.users.register(user)
             .then(function() {
-              document.location = '#/';
-              document.location.reload(true);
+              context.redirect("#/");
+              toastr.success("User registered successfuly");
+            }, function(error) {
+              toastr.error(error.responseText);
             });
         });
       });
@@ -45,12 +47,14 @@ var usersController = function() {
         };
         data.users.signIn(user)
           .then(function(user) {
-            document.location = '#/';
-            document.location.reload(true);
-  });
-});
-});
-}
+            context.redirect("#/");
+            toastr.success("Logged in successfuly!");
+          }, function(error) {
+            toastr.error(error.responseText);
+          });
+      });
+    });
+  }
   return {
     all: all,
     register: register,
