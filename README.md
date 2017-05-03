@@ -47,10 +47,10 @@ When a product is sold, the seller gets his "cash" updated.
       * request data: none, response data - {users: [...]}
 
     - POST      /api/users      - register a new user
-      * request data - {username:... , passHash:...}, response data - {username:... , authKey:...}
+      * request data - {username:... , passHash:...}, response data - {username:...}
 
     - PUT       /api/users      - user login
-      * request data - {username:... , passHash:...}, response data - {username:... , authKey:...}
+      * request data - {username:... , passHash:...}, response data - {username:...}
 
   * Profiles - 0/1
     - GET       /api/profiles   - get an user's profile (no query for own profile, query userId for other users' profiles)
@@ -69,7 +69,7 @@ When a product is sold, the seller gets his "cash" updated.
     - DELETE    /api/messages             - delete a message
       * request data - {msgId:...}, response data - {authorId:...}
 
-  * Products - 2/4
+  * Products - 3/4
     - GET       /api/products   - get products info (filtered with queries pCategory and pTitle, get single product with query productId)
       * request data - none, response data - {products: [...]}
 

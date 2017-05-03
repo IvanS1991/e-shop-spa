@@ -11,6 +11,7 @@ module.exports = function(db) {
 
         let messages = db.get("messages")
                         .filter({authorId: author.userId})
+                        .reverse()
                         .value();
         
         response.json({
@@ -27,6 +28,7 @@ module.exports = function(db) {
 
         let messages = db.get("messages")
                         .filter({recipientId: recipient.userId})
+                        .reverse()
                         .value();
         
         response.json({
@@ -73,6 +75,8 @@ module.exports = function(db) {
     let remove = function(request, response) {
         let msgData = request.body;
 
+        let authKey = request.headers["x-auth-key"];
+
         let msg = db.get("messages")
                     .find({msgId: msgData.msgId})
                     .value();
@@ -81,20 +85,18 @@ module.exports = function(db) {
                     .indexOf(msg)
                     .value();
 
-        let author = db.get("users")
-                    .find({authKey: msgData.authKey})
+        let recipient = db.get("users")
+                    .find({authKey: authKey})
                     .value();
         
-        if (author.userId === msg.authorId) {
+        if (recipient.userId === msg.recipientId) {
             
             db.get("messages")
                 .splice(index, 1)
                 .write();
 
             response.status(200)
-                    .json({
-                        authorId: author.userId
-                    });
+                    .json("Success");
         } else {
             response.status(404)
                     .json("Cannot delete other users' messages");

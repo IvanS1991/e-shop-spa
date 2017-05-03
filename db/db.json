@@ -44,6 +44,24 @@
       "authKey": "georgis9YQoKzCGGUvZZOOGeFoAp7I0FshM0lKtdFjOO99z7Lo2mzgHLvWcpyNqqex",
       "cash": 0,
       "created": "02-05-2017 / 16:07:09"
+    },
+    {
+      "username": "ivan321123",
+      "usernameToLower": "ivan321123",
+      "passHash": "2891baceeef1652ee698294da0e71ba78a2a4064",
+      "userId": "BAdSghpn0EeI9QGfW90crmkpLQDcXrkoLQM66nesdRa14pBC81GWwitasA6A",
+      "authKey": "ivan321123JQJD8bbEQO7C0cyOaLI41IAV5M320C8Qr6dOoNpNMydwj8JRP5Y7PNQSPnq1",
+      "cash": 0,
+      "created": "03-05-2017 / 12:20:39"
+    },
+    {
+      "username": "bfsdafsdb",
+      "usernameToLower": "bfsdafsdb",
+      "passHash": "2891baceeef1652ee698294da0e71ba78a2a4064",
+      "userId": "W2UoVzlNCqKsXoGzSlQ18PgENTBA5g6IdnwFFV32jrgsH7f8Ocl4qrdBaCyb",
+      "authKey": "bfsdafsdbvrpk9q6bSQ6VzTAwNprwda24vKkeNSFdAlHFYHmfZ2JPvgOxASguB0aC5eed",
+      "cash": 0,
+      "created": "03-05-2017 / 12:21:23"
     }
   ],
   "messages": [
@@ -279,28 +297,6 @@
       "seen": false
     },
     {
-      "title": "dwqdqwd",
-      "content": "feqwqw",
-      "msgId": "MSGdcrzdQRZipRec2bMNbbMzU9lCKcx2eHRZ5EGKwYva5Loaq0OqHRcjNqk6yLN",
-      "author": "georgi",
-      "authorId": "wLN2Lpkjp22YPgLP4ZKkCaJaJWDn66BM2tg2MuImTscedmUbtP9lobdjtg9K",
-      "recipient": "ivan",
-      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "02-05-2017 / 16:11:34",
-      "seen": false
-    },
-    {
-      "title": "dweqwe",
-      "content": "fqwefqw",
-      "msgId": "MSGbNjLDQE4M3WkfCh6R8AniVFfbRVlJl337bKypZrTzvQKdWk8cF38GYq96Jby",
-      "author": "georgi",
-      "authorId": "wLN2Lpkjp22YPgLP4ZKkCaJaJWDn66BM2tg2MuImTscedmUbtP9lobdjtg9K",
-      "recipient": "ivan",
-      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "02-05-2017 / 16:12:11",
-      "seen": false
-    },
-    {
       "title": "asd123",
       "content": "wdqe",
       "msgId": "MSGEOG9ZWm27SmhXs2RHRWzdcwDNOHbkphbSOY7zqlHarEuNZclWQNGT6R0n1xP",
@@ -314,44 +310,94 @@
   ],
   "products": [
     {
-      "title": "bidon",
-      "description": "za zele",
-      "category": "polezni neshta",
+      "title": "Samsung S8 Edge",
+      "description": "Phone, very good, yes",
+      "category": "Mobile - Android",
+      "price": 1500,
+      "productId": "PRODmeL2H5NDxaZCzCvL4qZhpVVNKsROo0kHtXcYE1XY30lzTKjiXwlAte7IF02l",
+      "seller": "cyka",
+      "sellerId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
+      "created": "03-05-2017 / 18:02:28"
+    },
+    {
+      "title": "iPhone 7S",
+      "description": "Looks good, kinda works as well",
+      "category": "Mobile - iOS",
+      "price": 1500,
+      "productId": "PRODkTFE0k7tDsIHOE7NaoL4eMxJv2J2hkM7GCeGQx8mdvqh3JzXLF8f4oibjBZG",
+      "seller": "ivan",
+      "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "created": "03-05-2017 / 18:07:06"
+    },
+    {
+      "title": "BMW M3",
+      "description": "VROOM",
+      "category": "Cars",
+      "price": 60000,
+      "productId": "PROD6EgEpniMloRFr8TGABwojxC3gAlMLPmgjMqJTVRAbuD5KNCBPvZqNp4qCjM2",
+      "seller": "ivan",
+      "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "created": "03-05-2017 / 18:07:39"
+    },
+    {
+      "title": "Bidon",
+      "description": "Designed for producing kiselo zele",
+      "category": "Home stuff",
+      "price": 20,
+      "productId": "PRODHHJQrPZ8s1Fm8izI5dRBEnrUPF16b9jjdyqEYqz6yFt0uBXPojGUfC2ISlXQ",
+      "seller": "ivan",
+      "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "created": "03-05-2017 / 18:17:04"
+    },
+    {
+      "title": "Kofa",
+      "description": "For head protection",
+      "category": "Armor",
+      "price": 9999,
+      "productId": "PRODA0TVzuClArjYNiZuYEexoD6y4EntIeyRnBq2JkE7auaWpnBHII393rVF3yEw",
+      "seller": "ivan",
+      "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "created": "03-05-2017 / 18:17:28"
+    },
+    {
+      "title": "15 BGN",
+      "description": "Fair deal, yes?",
+      "category": "Exchange money",
+      "price": null,
+      "productId": "PRODRTHc9jrnfKAmUPFb8sAjQQMzp9y5ZbKhnV1ZG3Ryd38s3YqGhJ67I55IToM7",
+      "seller": "ivan",
+      "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "created": "03-05-2017 / 18:18:55"
+    },
+    {
+      "title": "15 BGN",
+      "description": "Better deal here!",
+      "category": "Exchange money",
+      "price": null,
+      "productId": "PRODhdnFR997p4ft3gD2N4Kl4Sn3aT2ipaULdnysvZfzU12Mn4DRRXTW0HK64v9a",
+      "seller": "cyka",
+      "sellerId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
+      "created": "03-05-2017 / 18:20:26"
+    },
+    {
+      "title": "Legendary Dragon Lance",
+      "description": "It's a fake, though.",
+      "category": "Weapons",
+      "price": 1,
+      "productId": "PRODadtL2FDdxB00YUk7n4gli6K9ncF7lkhf3JBhceMPpPg2KwktzoYAeXthHhqw",
+      "seller": "cyka",
+      "sellerId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
+      "created": "03-05-2017 / 18:21:09"
+    },
+    {
+      "title": "Underwear",
+      "description": "Should be armor, yes?",
+      "category": "Armor",
       "price": 55,
-      "productId": "PRODpMzG91Hpgq920aWawRcqVelR3bpNXNBm1bciM2h8JVNTMcdBkKHpH1xW1aFA",
+      "productId": "PRODWCmbxSFkNUmB22uN1138Q1Fz2r0NOn1iq9d2tixoYg5hDpLoclPe181uyAvs",
       "seller": "cyka",
       "sellerId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
-      "created": "30-04-2017 / 21:25:45"
-    },
-    {
-      "title": "kazan",
-      "description": "za rakiq",
-      "category": "polezni neshta",
-      "price": 150,
-      "productId": "PRODa3g0McgQ1BSoI8HNh7pKtwaS8jwApQDLmmCEoCKTtltsGspg14uKZhHlQNmZ",
-      "seller": "cyka",
-      "sellerId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
-      "created": "02-05-2017 / 14:33:26"
-    },
-    {
-      "title": "iDiot 7S",
-      "description": "tilifon",
-      "category": "meh",
-      "price": 999,
-      "productId": "PRODjjKk7ul0OPkAU4FATnmrlakhv9CsyDJr5CqF2EqKi41kJ2X5oO9DJS0kd8IN",
-      "seller": "ivan",
-      "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "02-05-2017 / 15:03:06"
-    },
-    {
-      "title": "bmw",
-      "description": "brym",
-      "category": "koli",
-      "price": 5500,
-      "productId": "PRODAhAMfi5HSbMRrk7PolZN4vjbF9UrgU0bZ0wa7cJHgPpDU9uuZsrAPgqV0QJi",
-      "seller": "ivan",
-      "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "02-05-2017 / 15:57:01"
+      "created": "03-05-2017 / 18:21:47"
     }
   ]
 }

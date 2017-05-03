@@ -63,10 +63,28 @@ var messagesController = (function() {
         });
       });
   };
+  
+  let deleteMsg = function(context) {
+    templates.get("message-delete")
+      .then(function(template) {
+        context.$element().html(template());
+
+        $("#btn-delete-confirm").on("click", function() {
+          let msgId = parseQuery(document.location.href).messageId;
+          data.messages.delete(msgId)
+            .then(function(response) {
+              toastr.success("Message deleted successfuly");
+            }, function(error) {
+              toastr.error(error.responseText);
+            });
+        });
+      });
+  };
 
   return {
     add: add,
     checkReceived,
-    checkSent
+    checkSent,
+    deleteMsg
   };
 }());

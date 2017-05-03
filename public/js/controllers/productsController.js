@@ -40,7 +40,6 @@ var productsController = (function() {
 
           data.products.add(product)
             .then(function(product) {
-              context.redirect("#/products");
               toastr.success(`Product successfully added!`);
             }, function(error) {
               toastr.error(error.responseText);
@@ -49,8 +48,51 @@ var productsController = (function() {
       });
   }
 
+  let manage = function(context) {
+    let products;
+    let categoryFilter = parseQuery(document.location.href).category;
+
+    validator.auth();
+    data.products.getForCurrentUser()
+      .then(function(response) {
+        if (categoryFilter) {
+          categoryFilter = decodeURIComponent(categoryFilter);
+          response.products = response.products.filter(x => x.category === categoryFilter);
+        }
+        products = response;
+        return templates.get("products-manage");
+      })
+      .then(function(template) {
+        context.$element().html(template(products));
+
+        $("#accordion").accordion({
+          collapsible: true,
+          active: false
+        });
+      });
+  };
+
+  let remove = function(context) {
+    templates.get("product-delete")
+      .then(function(template) {
+        context.$element().html(template());
+
+        $("#btn-delete-confirm").on("click", function(e) {
+          let productId = parseQuery(document.location.href).productid;
+          data.products.delete(productId)
+            .then(function(response) {
+              toastr.success("Product deleted successfuly!");
+            }, function(error) {
+              toastr.error(error.responseText);
+            });
+        });
+      });
+  };
+
   return {
     all: all,
-    add: add
+    add: add,
+    manage: manage,
+    delete: remove
   };
 }());

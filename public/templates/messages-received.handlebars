@@ -13,7 +13,10 @@
     <div>
         <h3>{{content}}</h3>
         <hr>
-        <a href="#/messages/add?recipient={{author}}">Reply</a>
+        <ul>
+            <li><a href="#/messages/add?recipient={{author}}">Reply</a></li>
+            <li><a href="#/messages/delete?messageId={{msgId}}">Delete message</a></li>
+        </ul>
     </div>
 {{/each}}
 </div>

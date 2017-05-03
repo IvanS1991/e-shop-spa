@@ -87,6 +87,14 @@ var data = (function() {
     return jsonRequester.get('/api/products');
   }
 
+  let getForCurrentUser = function() {
+    return jsonRequester.get('/api/products', {
+      headers: {
+        "x-auth-key": localStorage.getItem(LOCAL_STORAGE_AUTH_KEY)
+      }
+    })
+  };
+
   function productsGetByQuery(query) {
     var options = {
       headers: {
@@ -98,6 +106,17 @@ var data = (function() {
         return res.result;
       });
   }
+
+  let productDelete = function(id) {
+    return jsonRequester.delete("/api/products", {
+      headers: {
+        "x-auth-key": localStorage.getItem(LOCAL_STORAGE_AUTH_KEY)
+      },
+      data: {
+        productId: id
+      }
+    });
+  };
 
   // M E S S A G E S
   function messagesAdd(message) {
@@ -144,6 +163,17 @@ var data = (function() {
       });
   }
 
+  let messageDelete = function(id) {
+    return jsonRequester.delete("/api/messages", {
+      headers: {
+        "x-auth-key": localStorage.getItem(LOCAL_STORAGE_AUTH_KEY)
+      },
+      data: {
+        msgId: id
+      }
+    });
+  };
+
 
   return {
     users: {
@@ -156,13 +186,16 @@ var data = (function() {
     products: {
       add: productsAdd,
       get: productsGet,
-      getByQuery: productsGetByQuery
+      getForCurrentUser: getForCurrentUser,
+      getByQuery: productsGetByQuery,
+      delete: productDelete
     },
     messages: {
       add: messagesAdd,
       getSent: messagesSent,
       getReceived: messagesReceived,
-      getById: messagesGetById
+      getById: messagesGetById,
+      delete: messageDelete
     }
   };
 }());

@@ -3,14 +3,35 @@ module.exports = function(db) {
     let factory = require("../utils/factory");   
 
     let get = function(request, response) {
-        let products = db.get("products")
-                        .value();
+        let authKey = request.headers["x-auth-key"];
 
-        let categories = db.get("products")
+        let seller = db.get("users")
+                        .find({authKey: authKey})
+                        .value();
+        let products;
+        let categories;
+
+        if (seller) {
+            products = db.get("products")
+                        .filter({sellerId: seller.userId})
+                        .value();    
+
+            categories = db.get("products")
+                        .filter({sellerId: seller.userId})
                         .map(x => x.category)
                         .uniq()
                         .sort()
                         .value();
+        } else {
+            products = db.get("products")
+                        .value();
+
+            categories = db.get("products")
+                        .map(x => x.category)
+                        .uniq()
+                        .sort()
+                        .value();
+        }
 
         response.status(200)
             .json({
@@ -21,8 +42,6 @@ module.exports = function(db) {
 
     let create = function(request, response) {
         let productData = request.body.product;
-
-        console.log(productData);
 
         let authKey = request.headers["x-auth-key"];
 
@@ -78,6 +97,9 @@ module.exports = function(db) {
                     .json({
                         sellerId: seller.userId
                     });
+        } else if (!product) {
+            response.status(404)
+                    .json("Non-existing product");
         } else {
             response.status(404)
                     .json("Cannot delete other users' products");

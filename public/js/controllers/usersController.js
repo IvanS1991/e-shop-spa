@@ -18,6 +18,12 @@ var usersController = function() {
         context.$element().html(template());
 
         $('#btn-register').on('click', function() {
+          let password = $("#tb-reg-password").val();
+          let repeatPassword = $("#tb-reg-password-repeat").val();
+          if (password !== repeatPassword) {
+            toastr.error("Passwords must match");
+            throw new Error("Passwords must match");
+          }
           var user = {
             username: $('#tb-reg-username').val(),
             password: $('#tb-reg-password').val()

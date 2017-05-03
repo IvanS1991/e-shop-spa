@@ -1,4 +1,4 @@
-<h1>Products</h2>
+<h1>Manage your products</h2>
 <nav class="navbar navbar-inverse zrow">
   <ul class="nav navbar-nav col-md-8">
       <li><a href="#/products">Browse products</a></li>
@@ -6,11 +6,11 @@
       <li><a href="#/products/add">Add new product</a></li>
   </ul>
 </nav>
-<h2><a href="#/products">Categories</a></h2>
 {{#if categories}}
+<h2><a href="#/products/manage">Categories</a></h2>
 <ul>
 {{#each categories}}
-<li><a href="#/products?category={{this}}">{{this}}</a></li>
+<li><a href="#/products/manage?category={{this}}">{{this}}</a></li>
 {{/each}}
 </ul>
 <hr>
@@ -24,7 +24,8 @@
       <p>Description: {{description}}</p>
       <p>Price: {{price}} BGN</p>
       <p>Seller: {{seller}}</p>
-      <button data-product-id="{{productId}}" class="btn btn-primary">Add to cart</button>
+      <hr>
+      <a href="#/products/manage/delete?productid={{productId}}">Delete product</a>
     </div>
 {{/each}}
 </div>

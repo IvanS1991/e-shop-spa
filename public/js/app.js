@@ -9,9 +9,12 @@
 
     this.get('#/products', productsController.all);
     this.get('#/products/add', productsController.add);
+    this.get('#/products/manage', productsController.manage);
+    this.get('#/products/manage/delete', productsController.delete);
     this.get('#/product/:id', productsController.getById);
 
     this.get('#/messages/add', messagesController.add);
+    this.get('#/messages/delete', messagesController.deleteMsg);
     this.get('#/messages/sent', messagesController.checkSent);
     this.get('#/messages/received', messagesController.checkReceived);
 
