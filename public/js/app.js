@@ -1,3 +1,12 @@
+import Sammy from "sammy";
+import toastr from "toastr";
+import {templates} from "templates";
+import {data} from "data";
+import {homeController} from "homeController";
+import {usersController} from "usersController";
+import {productsController} from "productsController";
+import {messagesController} from "messagesController";
+
 (function() {
 
   var sammyApp = Sammy('#content', function() {

@@ -47,3 +47,5 @@ var jsonRequester = (function() {
     delete: del
   };
 }());
+
+export {jsonRequester};

@@ -1,3 +1,5 @@
+import toastr from "toastr";
+
 let validator = (function() {
 
     let errMsg = function(msg) {
@@ -70,3 +72,5 @@ let validator = (function() {
         auth
     }   
 }());
+
+export {validator};

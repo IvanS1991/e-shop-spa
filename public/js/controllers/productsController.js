@@ -1,3 +1,10 @@
+import toastr from "toastr";
+import "jquery-ui";
+import {templates} from "templates";
+import {parseQuery} from "parse-query";
+import {data} from "data";
+import {validator} from "validator";
+
 var productsController = (function() {
 
   function all(context) {
@@ -96,3 +103,5 @@ var productsController = (function() {
     delete: remove
   };
 }());
+
+export {productsController};

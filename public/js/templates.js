@@ -1,7 +1,7 @@
+import Handlebars from "handlebars";
+
 var templates = function() {
-  var handlebars = window.handlebars || window.Handlebars,
-    Handlebars = window.handlebars || window.Handlebars,
-    cache = {};
+  let cache = {};
 
   function get(name) {
     var promise = new Promise(function(resolve, reject) {
@@ -23,3 +23,5 @@ var templates = function() {
     get: get
   };
 }();
+
+export {templates};

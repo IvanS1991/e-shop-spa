@@ -1,3 +1,7 @@
+import toastr from "toastr";
+import {templates} from "templates";
+import {data} from "data";
+
 var usersController = function() {
 
   function all(context) {
@@ -67,3 +71,5 @@ var usersController = function() {
     login: login
   };
 }();
+
+export {usersController};

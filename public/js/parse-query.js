@@ -11,3 +11,5 @@ let parseQuery = function(url) {
   queries.forEach(x => output[x[0]] = x[1]);
   return output;
 };
+
+export {parseQuery};

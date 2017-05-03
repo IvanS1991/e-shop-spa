@@ -1,3 +1,7 @@
+import "crypto-js";
+import {jsonRequester} from "json-requester";
+import {validator} from "validator";
+
 var data = (function() {
   const LOCAL_STORAGE_USERNAME_KEY = 'LOGIN_USERNAME',
     LOCAL_STORAGE_AUTH_KEY = 'LOGIN_AUTHKEY';
@@ -199,3 +203,5 @@ var data = (function() {
     }
   };
 }());
+
+export {data};

@@ -1,3 +1,7 @@
+import toastr from "toastr";
+import {templates} from "templates";
+import {data} from "data";
+
 var homeController = function() {
 
   function all(context) {
@@ -11,3 +15,5 @@ var homeController = function() {
     all: all
   };
 }();
+
+export {homeController};
