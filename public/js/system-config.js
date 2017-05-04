@@ -24,6 +24,7 @@ System.config({
         "productsController": "./js/controllers/productsController.js",
         "homeController": "./js/controllers/homeController.js",
         "messagesController": "./js/controllers/messagesController.js",
+        "cartController": "./js/controllers/cartController.js",
         
         // APP
         "app": "./js/app.js"

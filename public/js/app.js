@@ -6,6 +6,7 @@ import {homeController} from "homeController";
 import {usersController} from "usersController";
 import {productsController} from "productsController";
 import {messagesController} from "messagesController";
+import {cartController} from "cartController";
 
 (function() {
 
@@ -20,10 +21,13 @@ import {messagesController} from "messagesController";
     this.get('#/products/add', productsController.add);
     this.get('#/products/manage', productsController.manage);
     this.get('#/products/manage/delete', productsController.delete);
-    this.get('#/product/:id', productsController.getById);
+    
+    this.get('#/products/cart', cartController.show);
+    this.get('#/products/cart/checkout', cartController.checkout);
+    this.get('#/products/cart/clear', cartController.clear);
 
     this.get('#/messages/add', messagesController.add);
-    this.get('#/messages/delete', messagesController.deleteMsg);
+    this.get('#/messages/delete', messagesController.delete);
     this.get('#/messages/sent', messagesController.checkSent);
     this.get('#/messages/received', messagesController.checkReceived);
 

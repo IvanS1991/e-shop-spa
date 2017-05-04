@@ -1,6 +1,6 @@
 var jsonRequester = (function() {
 
-  function send(method, url, options) {
+  let request = function(method, url, options) {
     options = options || {};
 
     var headers = options.headers || {},
@@ -24,28 +24,25 @@ var jsonRequester = (function() {
     return promise;
   }
 
-  function get(url, options) {
-    return send('GET', url, options);
+  class Requester {
+    get(url, options) {
+      return request('GET', url, options);
+    }
+
+    post(url, options) {
+      return request('POST', url, options);
+    }
+
+    put(url, options) {
+      return request('PUT', url, options);
+    }
+
+    delete(url, options) {
+      return request('DELETE', url, options);
+    }
   }
 
-  function post(url, options) {
-    return send('POST', url, options);
-  }
-
-  function put(url, options) {
-    return send('PUT', url, options);
-  }
-
-  function del(url, options) {
-    return send('DELETE', url, options);
-  }
-
-  return {
-    get: get,
-    post: post,
-    put: put,
-    delete: del
-  };
+  return new Requester();
 }());
 
 export {jsonRequester};

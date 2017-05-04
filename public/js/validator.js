@@ -18,59 +18,57 @@ let validator = (function() {
         userAuth: "You must be logged in to do that"
     };
 
-    let user = function(userData) {
-        let invalidUsername = userData.username.length < 2 || userData.username.length > 20;
-        let invalidPassword = userData.password.length < 6 || userData.password.length > 40;
-        if (invalidUsername) {
-            errMsg(err.username);
+    class Validator {
+        user(userData) {
+            let invalidUsername = userData.username.length < 2 || userData.username.length > 20;
+            let invalidPassword = userData.password.length < 6 || userData.password.length > 40;
+            if (invalidUsername) {
+                errMsg(err.username);
+            }
+            if (invalidPassword) {
+                errMsg(err.password);
+            }
         }
-        if (invalidPassword) {
-            errMsg(err.password);
-        }
-    };
 
-    let msg = function(msgData) {
-        let invalidTitle = msgData.title === "";
-        let invalidContent = msgData.content === "";
-        if (invalidTitle) {
-            errMsg(err.emptyTitle);
+        msg(msgData) {
+            let invalidTitle = msgData.title === "";
+            let invalidContent = msgData.content === "";
+            if (invalidTitle) {
+                errMsg(err.emptyTitle);
+            }
+            if (invalidContent) {
+                errMsg(err.emptyContent);
+            }
         }
-        if (invalidContent) {
-            errMsg(err.emptyContent);
-        }
-    };
 
-    let product = function(productData) {
-        let invalidTitle = productData.title === "";
-        let invalidCategory = productData.category === "";
-        let invalidDescription = productData.description === "";
-        let invalidPrice = productData.price === "" || +productData.price <= 0;
-        if (invalidTitle) {
-            errMsg(err.emptyTitle);
+        product(productData) {
+            let invalidTitle = productData.title === "";
+            let invalidCategory = productData.category === "";
+            let invalidDescription = productData.description === "";
+            let invalidPrice = productData.price === "" || +productData.price <= 0;
+            if (invalidTitle) {
+                errMsg(err.emptyTitle);
+            }
+            if (invalidCategory) {
+                errMsg(err.emptyCategory);
+            }
+            if (invalidDescription) {
+                errMsg(err.emptyDescription);
+            }
+            if (invalidPrice) {
+                errMsg(err.productPrice);
+            }
         }
-        if (invalidCategory) {
-            errMsg(err.emptyCategory);
-        }
-        if (invalidDescription) {
-            errMsg(err.emptyDescription);
-        }
-        if (invalidPrice) {
-            errMsg(err.productPrice);
-        }
-    };
 
-    let auth = function() {
-        if (!localStorage.getItem("LOGIN_AUTHKEY")) {
-            errMsg(err.userAuth);
+        auth() {
+            if (!localStorage.getItem("LOGIN_AUTHKEY")) {
+                errMsg(err.userAuth);
+            }
         }
-    };
+    }
+    
 
-    return {
-        user,
-        msg,
-        product,
-        auth
-    }   
+    return new Validator();  
 }());
 
 export {validator};

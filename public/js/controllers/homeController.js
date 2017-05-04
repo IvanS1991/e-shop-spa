@@ -4,16 +4,17 @@ import {data} from "data";
 
 var homeController = function() {
 
-  function all(context) {
-    templates.get('home')
-        .then(function(template) {
-        context.$element().html(template());
-      });
+  class HomeController {
+    all(context) {
+      templates.get('home')
+          .then(function(template) {
+          context.$element().html(template());
+        });
+    }
   }
+  
 
-  return {
-    all: all
-  };
+  return new HomeController();
 }();
 
 export {homeController};

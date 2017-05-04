@@ -32,6 +32,9 @@ app.post("/api/products", productController.create);
 app.put("/api/products", productController.update);
 app.delete("/api/products", productController.remove);
 
+let orderController = require("./controllers/order-controller")(db);
+app.post("/api/orders", orderController.post);
+
 app.listen(serverConfig.port, function() {
     console.log(`Listening - http://localhost:${serverConfig.port}`);
 });

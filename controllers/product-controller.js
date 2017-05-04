@@ -4,12 +4,34 @@ module.exports = function(db) {
 
     let get = function(request, response) {
         let authKey = request.headers["x-auth-key"];
+        let productIds = request.headers["x-product-ids"];
 
         let seller = db.get("users")
                         .find({authKey: authKey})
                         .value();
         let products;
         let categories;
+
+        if (productIds) {
+            productIds = productIds.split(",");
+            let productsById = [];
+            productIds.forEach(function(x) {
+                let product = db.get("products")
+                    .find({productId: x})
+                    .value();
+                productsById.push(product);
+            });
+
+            let totalCost = productsById.map(x => x.price)
+                                .reduce((x, y) => x + y, 0);
+
+            response.status(200)
+                    .json({
+                        products: productsById,
+                        totalCost: totalCost
+                    });
+            return;
+        }
 
         if (seller) {
             products = db.get("products")

@@ -1,0 +1,12 @@
+<h1>Shopping cart</h1>
+<hr>
+{{#each products}}
+<p>Title: {{title}}</p>
+<p>Seller: {{seller}}</p>
+<p>Price: {{price}}</p>
+<hr>
+{{/each}}
+<h2>Total cost: {{totalCost}} BGN</h2>
+<hr>
+<a href="#/products/cart/checkout" class="btn btn-primary">Checkout</a>
+<a href="#/products/cart/clear" class="btn btn-primary">Clear cart</a>
