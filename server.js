@@ -10,6 +10,7 @@ let app = express(),
 app.use(cors());
 app.use(bodyParser.json());
 app.use("/", express.static("public"));
+app.use("/", express.static("public/tests"));
 app.use("/node_modules", express.static("node_modules"));
 
 // Users

@@ -6,6 +6,7 @@ var data = (function() {
   const LOCAL_STORAGE_USERNAME_KEY = 'LOGIN_USERNAME',
     LOCAL_STORAGE_AUTH_KEY = 'LOGIN_AUTHKEY';
   
+  // Users
   class Users {
     register(user) {
       validator.user(user);
@@ -60,7 +61,7 @@ var data = (function() {
       return jsonRequester.get('/api/users');
     }
   }
-  // U S E R S
+  // Products
   
   class Products {
     add(product) {
@@ -124,7 +125,7 @@ var data = (function() {
       });
     };
   }
-  // P R O D U C T S
+  // Messages
   
   class Messages {
     add(message) {
