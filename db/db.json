@@ -295,17 +295,6 @@
       "seen": false
     },
     {
-      "title": "dsad",
-      "content": "dwq",
-      "msgId": "MSGd9Hn8E8V8rz18I70oXkPRv4IxMb5Th7HNVFB9tPZ8XBS8XeXHuwkvYCOKvV0",
-      "author": "georgi",
-      "authorId": "wLN2Lpkjp22YPgLP4ZKkCaJaJWDn66BM2tg2MuImTscedmUbtP9lobdjtg9K",
-      "recipient": "ivan",
-      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "02-05-2017 / 16:11:03",
-      "seen": false
-    },
-    {
       "title": "asd123",
       "content": "wdqe",
       "msgId": "MSGEOG9ZWm27SmhXs2RHRWzdcwDNOHbkphbSOY7zqlHarEuNZclWQNGT6R0n1xP",
@@ -314,6 +303,17 @@
       "recipient": "georgi",
       "recipientId": "wLN2Lpkjp22YPgLP4ZKkCaJaJWDn66BM2tg2MuImTscedmUbtP9lobdjtg9K",
       "created": "02-05-2017 / 16:12:55",
+      "seen": false
+    },
+    {
+      "title": "asd123",
+      "content": "dsa321",
+      "msgId": "MSG4VPBXXHcOiz8uaH1jjD9DEa7ZPfoAT3VZ9cPWFaZig52eGxpSjFI3pLFMbef",
+      "author": "ivan",
+      "authorId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "recipient": "cyka",
+      "recipientId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
+      "created": "03-05-2017 / 21:15:19",
       "seen": false
     }
   ],
@@ -369,26 +369,6 @@
       "created": "03-05-2017 / 18:17:28"
     },
     {
-      "title": "15 BGN",
-      "description": "Fair deal, yes?",
-      "category": "Exchange money",
-      "price": null,
-      "productId": "PRODRTHc9jrnfKAmUPFb8sAjQQMzp9y5ZbKhnV1ZG3Ryd38s3YqGhJ67I55IToM7",
-      "seller": "ivan",
-      "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "03-05-2017 / 18:18:55"
-    },
-    {
-      "title": "15 BGN",
-      "description": "Better deal here!",
-      "category": "Exchange money",
-      "price": null,
-      "productId": "PRODhdnFR997p4ft3gD2N4Kl4Sn3aT2ipaULdnysvZfzU12Mn4DRRXTW0HK64v9a",
-      "seller": "cyka",
-      "sellerId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
-      "created": "03-05-2017 / 18:20:26"
-    },
-    {
       "title": "Legendary Dragon Lance",
       "description": "It's a fake, though.",
       "category": "Weapons",
@@ -417,6 +397,26 @@
       "seller": "testreg1337",
       "sellerId": "eDPXSUDfANn0ctOkEP6X1QOuMtmLz62Nltn75GzDiOcjBSTox34xCaZ2SZRD",
       "created": "03-05-2017 / 20:57:38"
+    },
+    {
+      "title": "15 BGN",
+      "description": "Fair deal, yes?",
+      "category": "Exchange money",
+      "price": 20,
+      "productId": "PRODFKZP4rpaVyEiqhDmIUI29kOrIGt9EprzRqwrfc2JE048eoB4j1GO7xfJWdCH",
+      "seller": "ivan",
+      "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "created": "03-05-2017 / 21:17:41"
+    },
+    {
+      "title": "15 BGN",
+      "description": "Better deals here!",
+      "category": "Exchange money",
+      "price": 19,
+      "productId": "PRODivJpeglVs4sWvzcIApXGB9rXWgEStLS4WIVfbT9BNWsMw31jLVgvS8FghTbZ",
+      "seller": "cyka",
+      "sellerId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
+      "created": "03-05-2017 / 21:18:15"
     }
   ]
 }
