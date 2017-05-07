@@ -6,7 +6,7 @@
       "passHash": "2891baceeef1652ee698294da0e71ba78a2a4064",
       "userId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
       "authKey": "ivanvO5MLlog05qoIz6PamOY8rhXIC3qGSojjjuNX60DlVzmxUxjdL4uH2QVXlUH",
-      "cash": 0,
+      "cash": 10019,
       "created": "28-04-2017 / 17:48:46"
     },
     {
@@ -24,7 +24,7 @@
       "passHash": "403731b1addabb637b60c0c60707212af0523866",
       "userId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
       "authKey": "cykaZMXtuUcj4bEYSCU50C4gaQzPOI7DZKjSCb6f03SUTxD6UhAyhfT7Cdudga21",
-      "cash": 0,
+      "cash": 74,
       "created": "30-04-2017 / 21:07:22"
     },
     {
@@ -417,6 +417,16 @@
       "seller": "cyka",
       "sellerId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
       "created": "03-05-2017 / 21:18:15"
+    },
+    {
+      "title": "gas",
+      "description": "gdas",
+      "category": "gsda",
+      "price": 55,
+      "productId": "PRODZuuk46emlxShqTIrZUzUdnINK2gty7hlw4IIiWMliOFrSpDwELx8vvOBAI8F",
+      "seller": "ivan",
+      "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "created": "05-05-2017 / 17:14:24"
     }
   ]
 }
