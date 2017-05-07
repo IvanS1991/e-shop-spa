@@ -1,6 +1,7 @@
 {{#if LOGIN_USERNAME}}
 <form class="form-inline col-md-6" id="container-sign-out">
-    <label>Logged in as {{LOGIN_USERNAME}}</label>
+    <label>Logged in as <a href="#/profile">{{LOGIN_USERNAME}}</a></label>
+    <br/>
     <button id="btn-sign-out" class="btn btn-primary">Sign out</button>
     <a href="#/products/cart" class="btn btn-primary">Shopping cart</a>
 </form>

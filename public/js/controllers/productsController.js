@@ -48,9 +48,21 @@ var productsController = (function() {
 
     add(context) {
       validator.auth();
+
+      let categories;
+
+      data.products.getCategories()
+        .then(function(response) {
+          categories = response;
+        });
+
       templates.get('product-add')
         .then(function(template) {
           context.$element().html(template());
+
+          $("#tb-product-category").autocomplete({
+            source: categories
+          });
 
           $('#btn-product-add').on('click', function() {
 

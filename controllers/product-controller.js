@@ -128,10 +128,22 @@ module.exports = function(db) {
         }
     };
 
+    let getCategories = function(request, response) {
+        let categories = db.get("products")
+                        .map(x => x.category)
+                        .uniq()
+                        .sort()
+                        .value();
+
+        response.status(200)
+                .json(categories);
+    };
+
     return {
         get,
         create,
         update,
-        remove
+        remove,
+        getCategories
     }
 };

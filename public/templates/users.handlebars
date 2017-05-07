@@ -3,8 +3,7 @@
 <ul>
   {{#each users}}
     <li class="user-box">
-      <p>Username: {{username}}</p>
-      <p>Cash: {{cash}}</p>
+      <p>Username: <a href="#/profile?userId={{userId}}">{{username}}</a></p>
       <a href="#/messages/add?recipient={{username}}">Send message to {{username}}</a>
       <hr>
     </li>
