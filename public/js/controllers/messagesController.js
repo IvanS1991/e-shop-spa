@@ -10,9 +10,25 @@ var messagesController = (function() {
   class MessagesController {
 
     add(context) {
-      templates.get('message-add')
+      let users;
+      
+      data.users.get()
+        .then(function(response) {
+            users = response.users.map(function(x) {
+                return x.username;
+            });
+            return templates.get('message-add');
+        })
         .then(function(template) {
           context.$element().html(template());
+          
+          $("#tb-message-recipient").autocomplete({
+            source: users,
+            delay: 10,
+            minLength: 0
+          }).focus(function() {
+            $(this).autocomplete("search");
+          });
           
           let queries = parseQuery(document.location.href);
           
