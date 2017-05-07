@@ -45,7 +45,7 @@ let validator = (function() {
             let invalidTitle = productData.title === "";
             let invalidCategory = productData.category === "";
             let invalidDescription = productData.description === "";
-            let invalidPrice = productData.price === "" || +productData.price <= 0;
+            let invalidPrice = productData.price === "" || isNaN(+productData.price) || +productData.price <= 0;
             if (invalidTitle) {
                 errMsg(err.emptyTitle);
             }
