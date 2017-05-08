@@ -1,4 +1,5 @@
 import Sammy from "sammy";
+import "jquery-ui";
 import toastr from "toastr";
 import {templates} from "templates";
 import {data} from "data";
@@ -24,7 +25,6 @@ import {cartController} from "cartController";
     
     this.get('#/products/cart', cartController.show);
     this.get('#/products/cart/checkout', cartController.checkout);
-    this.get('#/products/cart/clear', cartController.clear);
 
     this.get('#/messages/add', messagesController.add);
     this.get('#/messages/delete', messagesController.delete);
@@ -39,6 +39,8 @@ import {cartController} from "cartController";
   });
 
   $(function() {
+    $(document).tooltip();
+
     sammyApp.run('#/');
 
     let loggedIn = function() {
@@ -59,7 +61,7 @@ import {cartController} from "cartController";
             };
             data.users.signIn(user)
               .then(function(user) {
-                document.location.hash = '/';
+                window.history.back();
               }, function(err) {
                 $('#container-sign-in').trigger("reset");
                 toastr.error(err.responseText);
@@ -69,7 +71,7 @@ import {cartController} from "cartController";
           $("#btn-sign-out").on("click", function() {
             data.users.signOut()
               .then(function() {
-                document.location.hash = "#/";
+                window.history.back();
               });
           });
         });

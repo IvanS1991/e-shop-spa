@@ -35,6 +35,7 @@
 <a href="#/messages/add?recipient={{username}}">Send message to user</a>
 <hr>
 <h1>{{username}}'s products</h1>
+<hr>
 {{/with}}
 {{#if products}}
 <div id="accordion" class="event-box">
@@ -50,6 +51,6 @@
 {{/each}}
 </div>
 {{else}}
-<h4>{{username}} has not posted any products yet!</h4>
+<h4>{{user.username}} has not posted any products yet!</h4>
 {{/if}}
 {{/if}}

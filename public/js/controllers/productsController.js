@@ -78,6 +78,7 @@ var productsController = (function() {
 
             data.products.add(product)
               .then(function(product) {
+                window.history.back();
                 toastr.success(`Product successfully added!`);
               }, function(error) {
                 toastr.error(error.responseText);
@@ -119,10 +120,15 @@ var productsController = (function() {
             let productId = parseQuery(document.location.href).productid;
             data.products.delete(productId)
               .then(function(response) {
+                window.history.back();
                 toastr.success("Product deleted successfuly!");
               }, function(error) {
                 toastr.error(error.responseText);
               });
+          });
+
+          $("#btn-delete-decline").on("click", function() {
+            window.history.back();
           });
         });
     };

@@ -71,6 +71,42 @@
       "authKey": "testreg1337ndY3yXI0vVx4YDPDPGZdSzZyDobXVbH51MBsmuPB5fS29hOAKs5xnGA35e4f",
       "cash": 0,
       "created": "03-05-2017 / 20:54:21"
+    },
+    {
+      "username": "asd",
+      "usernameToLower": "asd",
+      "passHash": "1fae3ce0905862435d03af3ce72aa80d4463f445",
+      "userId": "tyRS2J4MlpyQoFxTqiiy9UzBMN3ETza4ag7DBkdksntCEPZBfRcGf26puP8g",
+      "authKey": "asdNBcVrLDf7gJBGnkUEfGoDEfrC81f7qcnIBGq7VZla5qv5YTYzKoOtdxt0rWr",
+      "cash": 0,
+      "created": "08-05-2017 / 12:58:18"
+    },
+    {
+      "username": "dsa",
+      "usernameToLower": "dsa",
+      "passHash": "1fae3ce0905862435d03af3ce72aa80d4463f445",
+      "userId": "A4tz3YLfVxF8vLtC8vsZmMeJzqYRERhh0vD3D9IGtMzy9FMfXCBFmgd10fQl",
+      "authKey": "dsafpVA2rXTqTwpdo1RO9VFKbDihWqigbVDRk0Pg9tJT7ZbCC0bq43KDbqLqycy",
+      "cash": 0,
+      "created": "08-05-2017 / 12:58:57"
+    },
+    {
+      "username": "gadsgdas",
+      "usernameToLower": "gadsgdas",
+      "passHash": "1fae3ce0905862435d03af3ce72aa80d4463f445",
+      "userId": "4CEPYZQ7kZRAyCWPOmB10KWkMkBaqSJiLfsg9PE52v8PrtS7SLdEkEyuKbhb",
+      "authKey": "gadsgdaslK4qmBwppJjVAAQYBg6oIaqVSTuXt2j7Aa9dYTYEM5jrrUL5OULEzSGpHAZX",
+      "cash": 0,
+      "created": "08-05-2017 / 13:43:16"
+    },
+    {
+      "username": "testregnew",
+      "usernameToLower": "testregnew",
+      "passHash": "1fae3ce0905862435d03af3ce72aa80d4463f445",
+      "userId": "k1uYjfBDyyjv1uyQVHhYS7jLeegd8UFjuoYkqBzRyeqY4SX15o3kbAX5ZF8Y",
+      "authKey": "testregnewi3myC6SEFxVppdzMtTDfYX3OJro8Rpg8IhiLxZgKpFLrXOpxHf7Ur6bNG3Gk",
+      "cash": 0,
+      "created": "08-05-2017 / 14:03:52"
     }
   ],
   "messages": [
@@ -127,28 +163,6 @@
       "recipient": "luba",
       "recipientId": "NyGdGlqE1btCKiJE5s2tbtX1nHjizcqoaORzVudbMIF6rXLwR1LpxkCUETo3",
       "created": "30-04-2017 / 22:24:31",
-      "seen": false
-    },
-    {
-      "title": "test msg 123",
-      "content": "test testing",
-      "msgId": "MSG7FpL5u9hDvbw7UIDs57zKUqM3MLt2sDWp83YAsURB8FCEAH9qkQpkeKU4GWM",
-      "author": "testreg",
-      "authorId": "ybVKF6bGio5jUw9qpAHe8kBsRt2E7gx3l751ZgOjnFG7TphXb0fePX2fTqoL",
-      "recipient": "ivan",
-      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "01-05-2017 / 14:28:37",
-      "seen": false
-    },
-    {
-      "title": "test msg 123",
-      "content": "test testing",
-      "msgId": "MSGO0P3irMxSTZFaNzDzSIRaqgglHwl1IZl1gaTkZy7Wqs1pO40Ty8XC4dAX8BE",
-      "author": "testreg",
-      "authorId": "ybVKF6bGio5jUw9qpAHe8kBsRt2E7gx3l751ZgOjnFG7TphXb0fePX2fTqoL",
-      "recipient": "ivan",
-      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "01-05-2017 / 14:29:06",
       "seen": false
     },
     {
@@ -285,17 +299,6 @@
     },
     {
       "title": "asd123",
-      "content": "dwq",
-      "msgId": "MSGhQJyS5CTwI7eUPsGd2bGQ80CMhaLhBLFTVlZsqs5GG204PNj6pSn5IRX72Ga",
-      "author": "georgi",
-      "authorId": "wLN2Lpkjp22YPgLP4ZKkCaJaJWDn66BM2tg2MuImTscedmUbtP9lobdjtg9K",
-      "recipient": "ivan",
-      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "02-05-2017 / 16:10:43",
-      "seen": false
-    },
-    {
-      "title": "asd123",
       "content": "wdqe",
       "msgId": "MSGEOG9ZWm27SmhXs2RHRWzdcwDNOHbkphbSOY7zqlHarEuNZclWQNGT6R0n1xP",
       "author": "ivan",
@@ -417,16 +420,6 @@
       "seller": "cyka",
       "sellerId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
       "created": "03-05-2017 / 21:18:15"
-    },
-    {
-      "title": "gas",
-      "description": "gdas",
-      "category": "gsda",
-      "price": 55,
-      "productId": "PRODZuuk46emlxShqTIrZUzUdnINK2gty7hlw4IIiWMliOFrSpDwELx8vvOBAI8F",
-      "seller": "ivan",
-      "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "05-05-2017 / 17:14:24"
     }
   ]
 }

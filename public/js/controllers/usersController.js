@@ -34,6 +34,9 @@ var usersController = function() {
       promise.then(function(response) {
         userData = response;
         return templates.get("profile-display");
+      }, function(error) {
+        toastr.error(error.responseText);
+        window.history.back();
       })
       .then(function(template) {
         context.$element().html(template(userData));
@@ -64,7 +67,7 @@ var usersController = function() {
 
             data.users.register(user)
               .then(function() {
-                context.redirect("#/");
+                window.history.back();
                 toastr.success("User registered successfuly");
               }, function(error) {
                 toastr.error(error.responseText);
@@ -86,7 +89,7 @@ var usersController = function() {
           };
           data.users.signIn(user)
             .then(function(user) {
-              context.redirect("#/");
+              window.history.back();
               toastr.success("Logged in successfuly!");
             }, function(error) {
               toastr.error(error.responseText);
