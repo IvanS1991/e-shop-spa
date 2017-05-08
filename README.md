@@ -27,12 +27,16 @@ When a product is sold, the seller gets his "cash" updated.
     - PUT       /api/users      - user login
       * request data - {username:... , passHash:...}, response data - {username:...}
 
+  * Profiles - 1/1
+    - GET       /api/profiles            - get profile, current user profile if provided with auth header, some user's profile if provided with query userId
+      * ?AUTH, request data - none, response data - {user:..., isAuthenticated:..., products:...}
+
   * Messages - 4/4
     - GET       /api/messages/sent       - get all RECEIVED messages (get a single message if query msgId is provided)
       * AUTH, request data - none, response data - {messages: [...]}
 
     - GET       /api/messages/received   - get all RECEIVED messages (get a single message if query msgId is provided)
-    * AUTH, request data - none, response data - {messages: [...]}
+      * AUTH, request data - none, response data - {messages: [...]}
 
     - POST      /api/messages            - send a new message
       * AUTH, request data - {title:... , content:... , recipientId:...}, response data - {msgId:...}
@@ -56,11 +60,14 @@ When a product is sold, the seller gets his "cash" updated.
 
 # Libraries/frameworks
   * Client
-    - jQuery - AJAX / DOM operations
+    - SystemJS - module loader
     - SammyJS - routing
-    - HandlebarsJS - templates
+    - jQuery - AJAX / DOM operations
     - CryptoJS - password encryption
+    - HandlebarsJS - templates
+    - jQuery UI - UI elements
     - Bootstrap - styles
+    - Toastr - notifications
 
   * Server
     - Express

@@ -60,6 +60,18 @@ var data = (function() {
     get() {
       return jsonRequester.get('/api/users');
     }
+
+    getProfile(id) {
+      return jsonRequester.get("api/profiles?userId=" + id);
+    }
+
+    getCurrentUserProfile() {
+      return jsonRequester.get("/api/profiles", {
+        headers: {
+          "x-auth-key": localStorage.getItem(LOCAL_STORAGE_AUTH_KEY)
+        }
+      });
+    } 
   }
   // Products
   
@@ -112,6 +124,10 @@ var data = (function() {
           'x-product-ids': ids
         }
       });
+    }
+
+    getCategories() {
+      return jsonRequester.get("/api/products/categories");
     }
 
     delete(id) {

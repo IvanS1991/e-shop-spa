@@ -1,6 +1,8 @@
 import toastr from "toastr";
+import "jquery-ui";
 import {templates} from "templates";
 import {data} from "data";
+import {parseQuery} from "parse-query";
 
 var usersController = function() {
 
@@ -16,6 +18,31 @@ var usersController = function() {
         .then(function(template) {
           context.$element().html(template(users));
         });
+    }
+
+    getProfile(context) {
+      let userId = parseQuery(document.location.href).userId;
+      let promise;
+      let userData;
+
+      if (userId) {
+        promise = data.users.getProfile(userId);
+      } else {
+        promise = data.users.getCurrentUserProfile();
+      }
+
+      promise.then(function(response) {
+        userData = response;
+        return templates.get("profile-display");
+      })
+      .then(function(template) {
+        context.$element().html(template(userData));
+
+        $("#accordion").accordion({
+          collapsible: true,
+          active: false
+        });
+      });
     }
 
     register(context) {

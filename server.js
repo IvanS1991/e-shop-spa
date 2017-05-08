@@ -19,6 +19,10 @@ app.get("/api/users", userController.all);
 app.post("/api/users", userController.register);
 app.put("/api/users", userController.login);
 
+// Profiles
+let profileController = require("./controllers/profile-controller")(db);
+app.get("/api/profiles", profileController.get);
+
 // Messages
 let msgController = require("./controllers/msg-controller")(db);
 app.get("/api/messages/sent", msgController.sent);
@@ -32,7 +36,9 @@ app.get("/api/products", productController.get);
 app.post("/api/products", productController.create);
 app.put("/api/products", productController.update);
 app.delete("/api/products", productController.remove);
+app.get("/api/products/categories", productController.getCategories);
 
+// Orders - not working properly
 let orderController = require("./controllers/order-controller")(db);
 app.post("/api/orders", orderController.post);
 

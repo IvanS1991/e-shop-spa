@@ -9,8 +9,10 @@
 {{#if messages}}
 <div id="accordion">
 {{#each messages}}
-    <h2>From: {{author}} | Title: {{title}} | Received at: {{created}}</h2>
+    <h2>Title: {{title}} | Received at: {{created}}</h2>
     <div>
+        <h4>From: <a href="#/profile?userId={{authorId}}">{{author}}</a></h4>
+        <hr>
         <h3>{{content}}</h3>
         <hr>
         <ul>

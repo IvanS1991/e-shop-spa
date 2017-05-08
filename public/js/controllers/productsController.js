@@ -48,9 +48,24 @@ var productsController = (function() {
 
     add(context) {
       validator.auth();
-      templates.get('product-add')
+
+      let categories;
+
+      data.products.getCategories()
+        .then(function(response) {
+          categories = response;
+          return templates.get('product-add');
+        })
         .then(function(template) {
           context.$element().html(template());
+
+          $("#tb-product-category").autocomplete({
+            source: categories,
+            delay: 10,
+            minLength: 0
+          }).focus(function() {
+            $(this).autocomplete("search");
+          });
 
           $('#btn-product-add').on('click', function() {
 

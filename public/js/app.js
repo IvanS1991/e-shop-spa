@@ -32,6 +32,7 @@ import {cartController} from "cartController";
     this.get('#/messages/received', messagesController.checkReceived);
 
     this.get('#/profiles', usersController.all);
+    this.get('#/profile', usersController.getProfile);
     this.get('#/users/register', usersController.register);
     this.get('#/users/login', usersController.login);
 
