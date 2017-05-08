@@ -8,8 +8,8 @@ let validator = (function() {
     };
 
     let err = {
-        username: "Username must be between 2 and 20 symbols long",
-        password: "Password must be between 6 and 40 symbols long",
+        username: "Username must be between 2 and 20 symbols long and can contain latin letters and digits.",
+        password: "Password must be between 6 and 40 symbols long, may contain latin letters and digits only, and must contain atleast 1 digit, 1 small and 1 big letter.",
         emptyTitle: "Title cannot be empty",
         emptyContent: "Content cannot be empty",
         emptyCategory: "Category cannot be empty",
@@ -20,8 +20,8 @@ let validator = (function() {
 
     class Validator {
         user(userData) {
-            let invalidUsername = userData.username.length < 2 || userData.username.length > 20;
-            let invalidPassword = userData.password.length < 6 || userData.password.length > 40;
+            let invalidUsername = userData.username.search(/[a-zA-Z0-9]{2,20}/) < 0;
+            let invalidPassword = userData.password.search(/(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,40}/) < 0;
             if (invalidUsername) {
                 errMsg(err.username);
             }

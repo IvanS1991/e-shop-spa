@@ -22,6 +22,12 @@ let cartController = (function() {
                 })
                 .then(function(template) {
                     context.$element().html(template(productsData));
+
+                    $("#btn-cart-clear").on("click", function() {
+                        localStorage.removeItem("SHOPPING_CART");
+                        toastr.success("Shopping cart has been cleared successfuly.");
+                        window.history.back();
+                    });
                 });
         }
 
@@ -33,16 +39,12 @@ let cartController = (function() {
                     $("#btn-checkout-confirm").on("click", function() {
                         data.order.checkout(localStorage.SHOPPING_CART)
                             .then(function(response) {
+                                localStorage.removeItem("SHOPPING_CART");
                                 toastr.success("Successful checkout!");
+                                context.redirect("#/");
                             });
                     });
                 });
-        }
-
-        clear(context) {
-            localStorage.removeItem("SHOPPING_CART");
-            toastr.success("Shopping cart has been cleared successfuly.");
-            context.redirect("#/");
         }
     }
 

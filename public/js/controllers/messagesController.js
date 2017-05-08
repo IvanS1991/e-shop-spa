@@ -46,6 +46,7 @@ var messagesController = (function() {
 
             data.messages.add(message)
               .then(function(message) {
+                window.history.back();
                 toastr.success(`Message successfully send!`);
               }, function(error) {
                 toastr.error(error.responseText);
@@ -97,10 +98,15 @@ var messagesController = (function() {
             let msgId = parseQuery(document.location.href).messageId;
             data.messages.delete(msgId)
               .then(function(response) {
+                window.history.back();
                 toastr.success("Message deleted successfuly");
               }, function(error) {
                 toastr.error(error.responseText);
               });
+          });
+
+          $("#btn-delete-decline").on("click", function() {
+            window.history.back();
           });
         });
     };
