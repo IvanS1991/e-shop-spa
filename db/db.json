@@ -6,7 +6,7 @@
       "passHash": "2891baceeef1652ee698294da0e71ba78a2a4064",
       "userId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
       "authKey": "ivanvO5MLlog05qoIz6PamOY8rhXIC3qGSojjjuNX60DlVzmxUxjdL4uH2QVXlUH",
-      "cash": 10019,
+      "cash": 10079,
       "created": "28-04-2017 / 17:48:46"
     },
     {
@@ -69,7 +69,7 @@
       "passHash": "2891baceeef1652ee698294da0e71ba78a2a4064",
       "userId": "eDPXSUDfANn0ctOkEP6X1QOuMtmLz62Nltn75GzDiOcjBSTox34xCaZ2SZRD",
       "authKey": "testreg1337ndY3yXI0vVx4YDPDPGZdSzZyDobXVbH51MBsmuPB5fS29hOAKs5xnGA35e4f",
-      "cash": 0,
+      "cash": 0.2,
       "created": "03-05-2017 / 20:54:21"
     },
     {
@@ -170,6 +170,42 @@
       "authKey": "rbqwe2aukTXgVuUsSjAMc3QuBL5f2cZfXaQxfnlWWWb60PrzF9qQPT1X37XcNDx4c",
       "cash": 0,
       "created": "09-05-2017 / 12:30:46"
+    },
+    {
+      "username": "ivan321",
+      "usernameToLower": "ivan321",
+      "passHash": "1fae3ce0905862435d03af3ce72aa80d4463f445",
+      "userId": "Zib0QzpWwi7tPv3h8lexJg6VV5jyIxZsscxvWznqHFrN7PqTMrIEZ0xUKhqv",
+      "authKey": "ivan321X26JzTqRwdCbpMjXa12T6YDMlsC7DCmR1inArSsoaI4pAr0mkcGCXt8NnxGT",
+      "cash": 0,
+      "created": "09-05-2017 / 15:05:04"
+    },
+    {
+      "username": "user123",
+      "usernameToLower": "user123",
+      "passHash": "99f98787207e815648b542af7c805d4585b88b7a",
+      "userId": "f8eY274P4G2dlreBcJmW7eXhAqj6QEgIWVPeTcCpMRWIVFbq9jHBrRUtYHz5",
+      "authKey": "user123mZ0VZdT3I7M8BlbRK3gFeyzOA315xDWTSJtXVLWFLwMdYb8cBYtXbpPRAGYt",
+      "cash": 0,
+      "created": "09-05-2017 / 15:20:05"
+    },
+    {
+      "username": "newuser123",
+      "usernameToLower": "newuser123",
+      "passHash": "1fae3ce0905862435d03af3ce72aa80d4463f445",
+      "userId": "vrNhIgxJY6qkkgW9xRr5FrCEsEcMXtNMkquLK47MvJH9hHNkUhzjw5YXTsPN",
+      "authKey": "newuser1230F4drl6qtOyhpJob0f0CHqtDCfejg23SXgsS5XVhWdL6GlxsDeufRz9WZmhX",
+      "cash": 0,
+      "created": "09-05-2017 / 15:25:22"
+    },
+    {
+      "username": "newuser1337",
+      "usernameToLower": "newuser1337",
+      "passHash": "1fae3ce0905862435d03af3ce72aa80d4463f445",
+      "userId": "NAxzLY2fkSGkGw0lOci9o53P27qnVifGc1AQ0yNkEaF70vz7b1MMbBaCKktw",
+      "authKey": "newuser1337oZICAhr0FGnL5aHml9Gq6eo6OYCTnnyzIMvOgMMPTdGrF8hXpvMBgPb0afOi",
+      "cash": 550,
+      "created": "09-05-2017 / 15:28:50"
     }
   ],
   "messages": [
@@ -284,61 +320,6 @@
       "seen": false
     },
     {
-      "title": "",
-      "content": "dsa321",
-      "msgId": "MSG5k4mde3MPVlPj7V3mVVcHkuQ0M3KXG9kh9VoCuTXO03z2Id1bcB8TzeNnzqt",
-      "author": "georgi",
-      "authorId": "wLN2Lpkjp22YPgLP4ZKkCaJaJWDn66BM2tg2MuImTscedmUbtP9lobdjtg9K",
-      "recipient": "ivan",
-      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "02-05-2017 / 16:07:27",
-      "seen": false
-    },
-    {
-      "title": "dsa",
-      "content": "dsad",
-      "msgId": "MSGHoGaO40e52akrRsATyna8zdFLSiEZlj5HIO3D37N44oWQevv2OOE14MHN7Te",
-      "author": "georgi",
-      "authorId": "wLN2Lpkjp22YPgLP4ZKkCaJaJWDn66BM2tg2MuImTscedmUbtP9lobdjtg9K",
-      "recipient": "ivan",
-      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "02-05-2017 / 16:09:12",
-      "seen": false
-    },
-    {
-      "title": "dsad",
-      "content": "dwq",
-      "msgId": "MSGcfRkNtIGp3zUw81x8r3TAvAEGoV7GC0oJuPjyKNig3tbLBv83Kv17oRt8mEp",
-      "author": "georgi",
-      "authorId": "wLN2Lpkjp22YPgLP4ZKkCaJaJWDn66BM2tg2MuImTscedmUbtP9lobdjtg9K",
-      "recipient": "ivan",
-      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "02-05-2017 / 16:09:23",
-      "seen": false
-    },
-    {
-      "title": "dsad",
-      "content": "dwq",
-      "msgId": "MSGJJDYDrFF4DqmPSXKoOi3jArpH0Hj74XYBFhWdiHlwa9zL2etP6w0haBjb5bV",
-      "author": "georgi",
-      "authorId": "wLN2Lpkjp22YPgLP4ZKkCaJaJWDn66BM2tg2MuImTscedmUbtP9lobdjtg9K",
-      "recipient": "ivan",
-      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "02-05-2017 / 16:09:37",
-      "seen": false
-    },
-    {
-      "title": "dsad",
-      "content": "dwq",
-      "msgId": "MSGoQLI77kFv6gM08bpbU8bFSQVsT6yVxODCZK9on2UCDZMQy4OlNUlKQcptwe0",
-      "author": "georgi",
-      "authorId": "wLN2Lpkjp22YPgLP4ZKkCaJaJWDn66BM2tg2MuImTscedmUbtP9lobdjtg9K",
-      "recipient": "ivan",
-      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "02-05-2017 / 16:09:45",
-      "seen": false
-    },
-    {
       "title": "asd123",
       "content": "wdqe",
       "msgId": "MSGEOG9ZWm27SmhXs2RHRWzdcwDNOHbkphbSOY7zqlHarEuNZclWQNGT6R0n1xP",
@@ -383,6 +364,7 @@
       "seen": false
     },
     {
+<<<<<<< HEAD
       "title": "prodavam golf 2",
       "content": "mnogo izgodno",
       "msgId": "MSGGHlaDm5Ym5zVsQoHcu91ZOyGqv6kOY5eJDox9ys2uTM5T4pJ0N1WED6C1QFo",
@@ -391,6 +373,71 @@
       "recipient": "ivan",
       "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
       "created": "09-05-2017 / 15:46:06",
+=======
+      "title": "Your bidon",
+      "content": "Hey, I am buying your bidon, take my money!",
+      "msgId": "MSGnIDEPtdW5NHTie5nkp5XIXSH0OI6Jr17tM3nT6ZI6caKb4jzNe9wHD64gNcc",
+      "author": "user123",
+      "authorId": "f8eY274P4G2dlreBcJmW7eXhAqj6QEgIWVPeTcCpMRWIVFbq9jHBrRUtYHz5",
+      "recipient": "ivan",
+      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "created": "09-05-2017 / 15:21:50",
+      "seen": false
+    },
+    {
+      "title": "About your bidon",
+      "content": "Hey, is that bidon new or is it used?",
+      "msgId": "MSGYYCNgzFmIhP7A8n8u8Wt7u7NAS2yQFJHhOVItOVDO6euzNBn5QdfO3UUmJ5l",
+      "author": "newuser123",
+      "authorId": "vrNhIgxJY6qkkgW9xRr5FrCEsEcMXtNMkquLK47MvJH9hHNkUhzjw5YXTsPN",
+      "recipient": "ivan",
+      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "created": "09-05-2017 / 15:25:52",
+      "seen": false
+    },
+    {
+      "title": "About your bidon",
+      "content": "Hey, I am buying your bidon, take my money!",
+      "msgId": "MSGYj6Jgspd2x7pNL6oNSK5PjucND52s4FHVyjA1l0EOTCy3PCrIxSIUm0JPlTa",
+      "author": "newuser1337",
+      "authorId": "NAxzLY2fkSGkGw0lOci9o53P27qnVifGc1AQ0yNkEaF70vz7b1MMbBaCKktw",
+      "recipient": "ivan",
+      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "created": "09-05-2017 / 15:29:20",
+      "seen": false
+    },
+    {
+      "title": "About your bidon",
+      "content": "Hey, I am buying your bidon, take my money!",
+      "msgId": "MSG7RStCNU8SIdbIY7alBMVRj8Dut0efa0urWbssgZkFoDhHjaQZVkZpIKyy1OT",
+      "author": "ivan",
+      "authorId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "recipient": "newuser1337",
+      "recipientId": "NAxzLY2fkSGkGw0lOci9o53P27qnVifGc1AQ0yNkEaF70vz7b1MMbBaCKktw",
+      "created": "09-05-2017 / 15:34:40",
+      "seen": false
+    },
+    {
+      "title": "My bidon",
+      "content": "Thanks for the money, dude!",
+      "msgId": "MSGXIRaEEyhmRYAYbypX9Ho5D0pyJMEMr63KTOieiwkj4uAgjntmkJ7XJaWbjZ9",
+      "author": "ivan",
+      "authorId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "recipient": "newuser1337",
+      "recipientId": "NAxzLY2fkSGkGw0lOci9o53P27qnVifGc1AQ0yNkEaF70vz7b1MMbBaCKktw",
+      "created": "09-05-2017 / 15:41:10",
+      "seen": false
+    },
+    {
+      "title": "About YOUR bidon",
+      "content": "Now I am buying your bidon, enjoy!",
+      "msgId": "MSG4N0TYVlBcUglowKHn7CyfYHywt2XQx4xkB9qlMnLG6dbshglHS58oT4VEsJE",
+      "author": "ivan",
+      "authorId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "recipient": "newuser1337",
+      "recipientId": "NAxzLY2fkSGkGw0lOci9o53P27qnVifGc1AQ0yNkEaF70vz7b1MMbBaCKktw",
+      "created": "09-05-2017 / 15:42:08",
+>>>>>>> last
       "seen": false
     }
   ],
@@ -416,30 +463,10 @@
       "created": "03-05-2017 / 18:07:06"
     },
     {
-      "title": "BMW M3",
-      "description": "VROOM",
-      "category": "Cars",
-      "price": 25,
-      "productId": "PROD6EgEpniMloRFr8TGABwojxC3gAlMLPmgjMqJTVRAbuD5KNCBPvZqNp4qCjM2",
-      "seller": "ivan",
-      "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "03-05-2017 / 18:07:39"
-    },
-    {
-      "title": "Bidon",
-      "description": "Designed for producing kiselo zele",
-      "category": "Home stuff",
-      "price": 20,
-      "productId": "PRODHHJQrPZ8s1Fm8izI5dRBEnrUPF16b9jjdyqEYqz6yFt0uBXPojGUfC2ISlXQ",
-      "seller": "ivan",
-      "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "03-05-2017 / 18:17:04"
-    },
-    {
       "title": "Kofa",
       "description": "For head protection",
       "category": "Armor",
-      "price": 9999,
+      "price": 44,
       "productId": "PRODA0TVzuClArjYNiZuYEexoD6y4EntIeyRnBq2JkE7auaWpnBHII393rVF3yEw",
       "seller": "ivan",
       "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
@@ -546,6 +573,7 @@
       "created": "09-05-2017 / 12:15:46"
     },
     {
+<<<<<<< HEAD
       "title": "VW",
       "description": "Golf 3",
       "category": "Cars",
@@ -564,6 +592,56 @@
       "seller": "luba",
       "sellerId": "NyGdGlqE1btCKiJE5s2tbtX1nHjizcqoaORzVudbMIF6rXLwR1LpxkCUETo3",
       "created": "09-05-2017 / 15:47:40"
+=======
+      "title": "Something for sale",
+      "description": "Amazing luxury item",
+      "category": "Luxury items",
+      "price": 11,
+      "productId": "PRODijE6PtotImReoUvWeAtwrCNJ2uH3Ox0GV2yCZ7arsBn3t25WYLGQUgDPXu7D",
+      "seller": "user123",
+      "sellerId": "f8eY274P4G2dlreBcJmW7eXhAqj6QEgIWVPeTcCpMRWIVFbq9jHBrRUtYHz5",
+      "created": "09-05-2017 / 15:20:41"
+    },
+    {
+      "title": "Something really valuable",
+      "description": "Yes, that's right!",
+      "category": "Luxury items",
+      "price": 2121,
+      "productId": "PRODIO4UvrNKJd0xcqV5ufIq1UPgjtdh8inxBKgs4VJk1D0O5aCYbIuccQ4u7GYt",
+      "seller": "newuser123",
+      "sellerId": "vrNhIgxJY6qkkgW9xRr5FrCEsEcMXtNMkquLK47MvJH9hHNkUhzjw5YXTsPN",
+      "created": "09-05-2017 / 15:27:34"
+    },
+    {
+      "title": "Bigger bidon",
+      "description": "For more and tastier kiselo zele",
+      "category": "Home stuff",
+      "price": 550,
+      "productId": "PRODzXRyZRvJMVuOV5NVzJnNJ6kBj0cpqo0a3L8WXbF7QbiNWmA7mzsCYpCwpY3l",
+      "seller": "newuser1337",
+      "sellerId": "NAxzLY2fkSGkGw0lOci9o53P27qnVifGc1AQ0yNkEaF70vz7b1MMbBaCKktw",
+      "created": "09-05-2017 / 15:29:51"
+    },
+    {
+      "title": "Better kofa",
+      "description": "+1 PROT",
+      "category": "Armor",
+      "price": 55,
+      "productId": "PRODNt8Df58xPaJErUapetoEMg1ojVMmmTpzrhMH3t4sPjqBNR54P6REsrq48zbA",
+      "seller": "ivan",
+      "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "created": "09-05-2017 / 15:33:48"
+    },
+    {
+      "title": "Nuclear missile",
+      "description": "Goes boom, very dangerous!",
+      "category": "Dangerous",
+      "price": 500000000,
+      "productId": "PRODeDYsQyOP7ub1dJclotPBxOMG1ILLULRpBhGhlsMCVMhZkzU1ofa9KnCgAKAw",
+      "seller": "ivan",
+      "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "created": "09-05-2017 / 15:42:43"
+>>>>>>> last
     }
   ]
 }
