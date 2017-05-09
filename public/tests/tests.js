@@ -46,7 +46,7 @@ describe('userRegister() tests', () => {
     it('Invalid user should cause error', done => {
         let user = {
             username: 'username',
-            password: 'password'
+            password: 'paSSword1234'
         };
 
         data.users
