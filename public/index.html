@@ -5,6 +5,11 @@
     
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:url" content="http://127.0.0.1:8000" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="E-Shop" />
+    <meta property="og:description" content="Course project for Telerik Academy's Javascript Applications 2017 course" />
+    <meta property="og:image" content="http://2.bp.blogspot.com/-7pH6Zc5iIB8/UQWx-QYhf2I/AAAAAAAADic/pJFLCCLzFhc/s1600/Dragon+Fruit.gif" />
     <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
     <link rel="stylesheet" href="./bower_components/jquery-ui/themes/base/jquery-ui.css"/>
@@ -14,6 +19,16 @@
   </head>
 
   <body>
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v2.9";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div id="root">
 
       <!-- HEADER -->
@@ -21,7 +36,8 @@
         <div class="row">
           <h1 class="page-header col-md-6">E-Shop - 
             <a href="https://github.com/Team-Dragonfruit/e-shop-spa">GitHub</a> - 
-            <a href="http://localhost:8000/tests.html">Tests</a>
+            <a href="http://localhost:8000/tests.html">Tests</a> - 
+            <div class="fb-share-button" data-href="http://127.0.0.1:8000" data-layout="button" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F127.0.0.1%3A8000%2F&amp;src=sdkpreparse">Споделяне</a></div>
           </h1>
 
           <!-- LOGGED IN AS -->
