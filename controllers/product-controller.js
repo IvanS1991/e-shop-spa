@@ -89,7 +89,27 @@ module.exports = function(db) {
     };
 
     let update = function(request, response) {
-        //TODO
+        let productUpdate = request.body.product;
+
+        let old = db.get("products")
+                        .find({productId: productUpdate.productId})
+                        .value();
+
+        old.title = productUpdate.title;
+        old.description = productUpdate.description;
+        old.category = productUpdate.category;
+        old.price = productUpdate.price;
+
+        let index = db.get("products")
+                        .findIndex({productId: productUpdate.productId})
+                        .value();
+
+        db.get("products")
+            .splice(index, 1, old)
+            .write();
+
+        response.status(200)
+                .json("OK");
     };
 
     let remove = function(request, response) {

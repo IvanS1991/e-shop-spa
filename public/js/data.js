@@ -93,6 +93,19 @@ var data = (function() {
         });
     }
 
+    edit(product) {
+      validator.product(product);
+      
+      return jsonRequester.put("/api/products", {
+        data: {
+          product
+        },
+        headers: {
+          "x-auth-key": localStorage.getItem(LOCAL_STORAGE_AUTH_KEY)
+        }
+      });
+    }
+
     get(query) {
       return jsonRequester.get('/api/products');
     }

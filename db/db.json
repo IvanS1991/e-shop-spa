@@ -107,6 +107,69 @@
       "authKey": "testregnewi3myC6SEFxVppdzMtTDfYX3OJro8Rpg8IhiLxZgKpFLrXOpxHf7Ur6bNG3Gk",
       "cash": 0,
       "created": "08-05-2017 / 14:03:52"
+    },
+    {
+      "username": "seriousreg",
+      "usernameToLower": "seriousreg",
+      "passHash": "1fae3ce0905862435d03af3ce72aa80d4463f445",
+      "userId": "HMOhtFlJcXKoYfBEaVgKxPSWaZ26pkpdliaJgii0y9lCv08fAouocIaJRMSt",
+      "authKey": "seriousregH772jzRefnyC6OFlMVPUm0Ks1vlKOwsXFU9fjC5VVYmebJB6KG3JtFCfHwmN",
+      "cash": 0,
+      "created": "09-05-2017 / 11:47:30"
+    },
+    {
+      "username": "dsadas",
+      "usernameToLower": "dsadas",
+      "passHash": "1fae3ce0905862435d03af3ce72aa80d4463f445",
+      "userId": "mTKiy9buEmc3iP1HgSm0tzCMNlIY8M9acunpgduPP4nCSFvdhME1kk4pUagp",
+      "authKey": "dsadastTSRGclgWfDfgCQ4qShfauCSeHwTgcjFlUDYwpKYkYM9cCO3P0kY1SHQnPDl",
+      "cash": 0,
+      "created": "09-05-2017 / 11:48:11"
+    },
+    {
+      "username": "lasttest",
+      "usernameToLower": "lasttest",
+      "passHash": "1fae3ce0905862435d03af3ce72aa80d4463f445",
+      "userId": "614w127wePsEhkgnrRYl43rnSYd0NoMUkm7RKBEJwg9XriCTix5Hue75VXm9",
+      "authKey": "lasttestBNtgXFTb2ZEJfFKlHXPWSSx2APUlbtUWMfj84PHdunbVKlm4jAh2D2Uehdlz",
+      "cash": 0,
+      "created": "09-05-2017 / 11:49:29"
+    },
+    {
+      "username": "fdas123",
+      "usernameToLower": "fdas123",
+      "passHash": "1fae3ce0905862435d03af3ce72aa80d4463f445",
+      "userId": "U8VSCftETOoCBxNL7xk2vKwpb46rGvznYKOYHGStOiqgZQ0KwAtOB7t2deci",
+      "authKey": "fdas123Vk1XWFhYyGAWhFVlx59rfsuWv7XW7f6DUHLjagMr3WdkYdZua5h9Dvr3hDYA",
+      "cash": 0,
+      "created": "09-05-2017 / 12:18:57"
+    },
+    {
+      "username": "rbweqr1234",
+      "usernameToLower": "rbweqr1234",
+      "passHash": "1fae3ce0905862435d03af3ce72aa80d4463f445",
+      "userId": "IcNfv8yogs0AT4YbH1oD5CKqyjv9ZoU6JYU54ZiOR5mWY5uOmCKOBcmYpgf9",
+      "authKey": "rbweqr1234DGoAXzsIm5Oopcn6QdRnB4GCGx9HWoTJYvEOG792bri3e5EfizC1RMCanttV",
+      "cash": 0,
+      "created": "09-05-2017 / 12:22:12"
+    },
+    {
+      "username": "aaa111",
+      "usernameToLower": "aaa111",
+      "passHash": "1fae3ce0905862435d03af3ce72aa80d4463f445",
+      "userId": "tYyam4yaQyMLh5be7WEDljmkJNHDutGjDqduVUibDvyecobnhwFDRFyq3rJd",
+      "authKey": "aaa111MJKcRhk69XLhBtkXcvqP5WfmodL0SHAZ7XGZ6zKpBfRmrPLx3e2wDoCLHM8S",
+      "cash": 0,
+      "created": "09-05-2017 / 12:30:08"
+    },
+    {
+      "username": "rbqwe",
+      "usernameToLower": "rbqwe",
+      "passHash": "1fae3ce0905862435d03af3ce72aa80d4463f445",
+      "userId": "5P5AFHmMP11BgvgrrVNwj8MDvOM8FA9pLP8mPacQhVGbtRy4kK0OCkS5Pot6",
+      "authKey": "rbqwe2aukTXgVuUsSjAMc3QuBL5f2cZfXaQxfnlWWWb60PrzF9qQPT1X37XcNDx4c",
+      "cash": 0,
+      "created": "09-05-2017 / 12:30:46"
     }
   ],
   "messages": [
@@ -276,28 +339,6 @@
       "seen": false
     },
     {
-      "title": "dsad",
-      "content": "dwq",
-      "msgId": "MSGaEnqw925c6ltVt5sBJ06M2wA03cKdSiGvExVBNgawxcg4P9DFzXtyUAP1QVz",
-      "author": "georgi",
-      "authorId": "wLN2Lpkjp22YPgLP4ZKkCaJaJWDn66BM2tg2MuImTscedmUbtP9lobdjtg9K",
-      "recipient": "ivan",
-      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "02-05-2017 / 16:10:01",
-      "seen": false
-    },
-    {
-      "title": "dsad",
-      "content": "dwqd",
-      "msgId": "MSG2OoFCVDUPMIlCJJB6Iqitdqmt6KTz8OxhcHGid5aFiSuWo9KH01kP1OUVbEt",
-      "author": "georgi",
-      "authorId": "wLN2Lpkjp22YPgLP4ZKkCaJaJWDn66BM2tg2MuImTscedmUbtP9lobdjtg9K",
-      "recipient": "ivan",
-      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
-      "created": "02-05-2017 / 16:10:22",
-      "seen": false
-    },
-    {
       "title": "asd123",
       "content": "wdqe",
       "msgId": "MSGEOG9ZWm27SmhXs2RHRWzdcwDNOHbkphbSOY7zqlHarEuNZclWQNGT6R0n1xP",
@@ -318,6 +359,28 @@
       "recipientId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
       "created": "03-05-2017 / 21:15:19",
       "seen": false
+    },
+    {
+      "title": "123",
+      "content": "123",
+      "msgId": "MSGZRo2Xim2AAbw6wfAs55ZqUSgo5JJHbrUlFq9aXu7s7nwlOguxa97dD6UJc8k",
+      "author": "ivan",
+      "authorId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "recipient": "cyka",
+      "recipientId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
+      "created": "09-05-2017 / 12:25:52",
+      "seen": false
+    },
+    {
+      "title": "feqw",
+      "content": "qfw",
+      "msgId": "MSGII0FRYg68o3Feut7T9MazMD5qZmcX5j7DSQYz1Vf29rgjIVpuuQbsk0WCeW7",
+      "author": "ivan",
+      "authorId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "recipient": "cyka",
+      "recipientId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
+      "created": "09-05-2017 / 12:31:36",
+      "seen": false
     }
   ],
   "products": [
@@ -335,7 +398,7 @@
       "title": "iPhone 7S",
       "description": "Looks good, kinda works as well",
       "category": "Mobile - iOS",
-      "price": 1500,
+      "price": 999,
       "productId": "PRODkTFE0k7tDsIHOE7NaoL4eMxJv2J2hkM7GCeGQx8mdvqh3JzXLF8f4oibjBZG",
       "seller": "ivan",
       "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
@@ -345,7 +408,7 @@
       "title": "BMW M3",
       "description": "VROOM",
       "category": "Cars",
-      "price": 60000,
+      "price": 25,
       "productId": "PROD6EgEpniMloRFr8TGABwojxC3gAlMLPmgjMqJTVRAbuD5KNCBPvZqNp4qCjM2",
       "seller": "ivan",
       "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
@@ -420,6 +483,56 @@
       "seller": "cyka",
       "sellerId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
       "created": "03-05-2017 / 21:18:15"
+    },
+    {
+      "title": "Test product",
+      "description": "Test product",
+      "category": "Luxury items",
+      "price": 10000000000,
+      "productId": "PROD79gOkUF7RsDd76Jid2aZjgcMX1mYezkMqVW2LDqaCL7b2rBki7LmSctSvQ4u",
+      "seller": "lasttest",
+      "sellerId": "614w127wePsEhkgnrRYl43rnSYd0NoMUkm7RKBEJwg9XriCTix5Hue75VXm9",
+      "created": "09-05-2017 / 11:50:23"
+    },
+    {
+      "title": "Test product 2",
+      "description": "Test product 2",
+      "category": "Home stuff",
+      "price": 55,
+      "productId": "PRODGbTuvsBT8uoqGWIXvIiOS0u4kQ7WgUhbqJMPoGaEjo7zhuK3tgv2lqTtZiTC",
+      "seller": "lasttest",
+      "sellerId": "614w127wePsEhkgnrRYl43rnSYd0NoMUkm7RKBEJwg9XriCTix5Hue75VXm9",
+      "created": "09-05-2017 / 11:51:14"
+    },
+    {
+      "title": "Nokia 3310",
+      "description": "Nice phone",
+      "category": "Mobile - Other",
+      "price": 5,
+      "productId": "PRODGiiATVqb91HyScBlpCUfWURa0YDs6DfPh6kYB3oN1aAKTAGTXDndTLk2IMT4",
+      "seller": "lasttest",
+      "sellerId": "614w127wePsEhkgnrRYl43rnSYd0NoMUkm7RKBEJwg9XriCTix5Hue75VXm9",
+      "created": "09-05-2017 / 11:52:08"
+    },
+    {
+      "title": "Something meaningful",
+      "description": "Totally useless",
+      "category": "Utilities",
+      "price": 20,
+      "productId": "PRODoGW47NYpezsWhwHeW8WB12tb2GDkzcbn27509pVBiH2QdEolysSRIeko5hfV",
+      "seller": "lasttest",
+      "sellerId": "614w127wePsEhkgnrRYl43rnSYd0NoMUkm7RKBEJwg9XriCTix5Hue75VXm9",
+      "created": "09-05-2017 / 11:52:19"
+    },
+    {
+      "title": "rnqwe",
+      "description": "rnqwe",
+      "category": "rnqwe",
+      "price": 55,
+      "productId": "PROD9fpxO3ua3gjv8ln4v8dhz4KcUzPK8ULVjlbsKASnlZ34c4cw9fTPD3dB609R",
+      "seller": "lasttest",
+      "sellerId": "614w127wePsEhkgnrRYl43rnSYd0NoMUkm7RKBEJwg9XriCTix5Hue75VXm9",
+      "created": "09-05-2017 / 12:15:46"
     }
   ]
 }

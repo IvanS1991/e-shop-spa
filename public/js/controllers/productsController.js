@@ -111,6 +111,51 @@ var productsController = (function() {
         });
     };
 
+    edit(context) {
+      let productId = parseQuery(document.location.href).productid;
+      let product;
+      let categories;
+
+      data.products.getCategories()
+        .then(function(response) {
+          categories = response;
+          return data.products.getByIds(productId);
+        })
+        .then(function(response) {
+          product = response.products[0];
+          return templates.get("product-edit");
+        })
+        .then(function(template) {
+          context.$element().html(template(product));
+
+          $("#tb-product-category").autocomplete({
+            source: categories,
+            delay: 10,
+            minLength: 0
+          }).focus(function() {
+            $(this).autocomplete("search");
+          });
+
+          $("#btn-product-edit").on("click", function() {
+            let productData = {
+              title: $('#tb-product-title').val(),
+              description: $('#tb-product-description').val(),
+              category: $('#tb-product-category').val(),
+              price: Number($('#tb-product-price').val()),
+              productId: productId
+            };
+
+            data.products.edit(productData)
+              .then(function(response) {
+                context.redirect("#/products/manage");
+                toastr.success("Product edited successfuly");
+              }, function(error) {
+                toastr.error(error.responseText);
+              });
+          });
+        });
+    }
+
     delete(context) {
       templates.get("product-delete")
         .then(function(template) {
@@ -120,7 +165,7 @@ var productsController = (function() {
             let productId = parseQuery(document.location.href).productid;
             data.products.delete(productId)
               .then(function(response) {
-                window.history.back();
+                context.redirect("#/products/manage");
                 toastr.success("Product deleted successfuly!");
               }, function(error) {
                 toastr.error(error.responseText);
@@ -128,7 +173,7 @@ var productsController = (function() {
           });
 
           $("#btn-delete-decline").on("click", function() {
-            window.history.back();
+            document.location.hash = "#/products/manage";
           });
         });
     };

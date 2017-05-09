@@ -22,6 +22,7 @@ import {cartController} from "cartController";
     this.get('#/products/add', productsController.add);
     this.get('#/products/manage', productsController.manage);
     this.get('#/products/manage/delete', productsController.delete);
+    this.get('#/products/manage/edit', productsController.edit);
     
     this.get('#/products/cart', cartController.show);
     this.get('#/products/cart/checkout', cartController.checkout);
@@ -54,24 +55,10 @@ import {cartController} from "cartController";
         .then(function(template) {
           $("#logged-in-as").html(template(localStorage));
 
-          $("#btn-sign-in").on("click", function() {
-            var user = {
-              username: $('#tb-username').val(),
-              password: $('#tb-password').val()
-            };
-            data.users.signIn(user)
-              .then(function(user) {
-                window.history.back();
-              }, function(err) {
-                $('#container-sign-in').trigger("reset");
-                toastr.error(err.responseText);
-              });
-          });
-
           $("#btn-sign-out").on("click", function() {
             data.users.signOut()
               .then(function() {
-                window.history.back();
+                location.hash = "#/";
               });
           });
         });
