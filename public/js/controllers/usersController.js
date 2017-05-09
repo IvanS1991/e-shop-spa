@@ -67,7 +67,7 @@ var usersController = function() {
 
             data.users.register(user)
               .then(function() {
-                window.history.back();
+                context.redirect("#/");
                 toastr.success("User registered successfuly");
               }, function(error) {
                 toastr.error(error.responseText);
@@ -89,7 +89,7 @@ var usersController = function() {
           };
           data.users.signIn(user)
             .then(function(user) {
-              window.history.back();
+              context.redirect("#/");
               toastr.success("Logged in successfuly!");
             }, function(error) {
               toastr.error(error.responseText);

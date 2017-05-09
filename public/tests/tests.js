@@ -30,7 +30,7 @@ describe('userRegister() tests', () => {
     it('Valid user should be added to all users', done => {
         let user = {
             username: 'username',
-            password: 'password'
+            password: 'Password123'
         };
 
         data.users

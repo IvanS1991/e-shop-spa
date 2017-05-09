@@ -114,14 +114,27 @@ var productsController = (function() {
     edit(context) {
       let productId = parseQuery(document.location.href).productid;
       let product;
+      let categories;
 
-      data.products.getByIds(productId)
+      data.products.getCategories()
+        .then(function(response) {
+          categories = response;
+          return data.products.getByIds(productId);
+        })
         .then(function(response) {
           product = response.products[0];
           return templates.get("product-edit");
         })
         .then(function(template) {
           context.$element().html(template(product));
+
+          $("#tb-product-category").autocomplete({
+            source: categories,
+            delay: 10,
+            minLength: 0
+          }).focus(function() {
+            $(this).autocomplete("search");
+          });
 
           $("#btn-product-edit").on("click", function() {
             let productData = {

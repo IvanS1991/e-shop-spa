@@ -107,6 +107,33 @@
       "authKey": "testregnewi3myC6SEFxVppdzMtTDfYX3OJro8Rpg8IhiLxZgKpFLrXOpxHf7Ur6bNG3Gk",
       "cash": 0,
       "created": "08-05-2017 / 14:03:52"
+    },
+    {
+      "username": "seriousreg",
+      "usernameToLower": "seriousreg",
+      "passHash": "1fae3ce0905862435d03af3ce72aa80d4463f445",
+      "userId": "HMOhtFlJcXKoYfBEaVgKxPSWaZ26pkpdliaJgii0y9lCv08fAouocIaJRMSt",
+      "authKey": "seriousregH772jzRefnyC6OFlMVPUm0Ks1vlKOwsXFU9fjC5VVYmebJB6KG3JtFCfHwmN",
+      "cash": 0,
+      "created": "09-05-2017 / 11:47:30"
+    },
+    {
+      "username": "dsadas",
+      "usernameToLower": "dsadas",
+      "passHash": "1fae3ce0905862435d03af3ce72aa80d4463f445",
+      "userId": "mTKiy9buEmc3iP1HgSm0tzCMNlIY8M9acunpgduPP4nCSFvdhME1kk4pUagp",
+      "authKey": "dsadastTSRGclgWfDfgCQ4qShfauCSeHwTgcjFlUDYwpKYkYM9cCO3P0kY1SHQnPDl",
+      "cash": 0,
+      "created": "09-05-2017 / 11:48:11"
+    },
+    {
+      "username": "lasttest",
+      "usernameToLower": "lasttest",
+      "passHash": "1fae3ce0905862435d03af3ce72aa80d4463f445",
+      "userId": "614w127wePsEhkgnrRYl43rnSYd0NoMUkm7RKBEJwg9XriCTix5Hue75VXm9",
+      "authKey": "lasttestBNtgXFTb2ZEJfFKlHXPWSSx2APUlbtUWMfj84PHdunbVKlm4jAh2D2Uehdlz",
+      "cash": 0,
+      "created": "09-05-2017 / 11:49:29"
     }
   ],
   "messages": [
@@ -318,6 +345,17 @@
       "recipientId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
       "created": "03-05-2017 / 21:15:19",
       "seen": false
+    },
+    {
+      "title": "testing",
+      "content": "test test",
+      "msgId": "MSGxA90Chc7EDrrZjFFvBsGmgHxgXlZtTjwPlYLErHk6lpm0MMUDkmZ6D1MU9Ss",
+      "author": "lasttest",
+      "authorId": "614w127wePsEhkgnrRYl43rnSYd0NoMUkm7RKBEJwg9XriCTix5Hue75VXm9",
+      "recipient": "ivan",
+      "recipientId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
+      "created": "09-05-2017 / 11:49:48",
+      "seen": false
     }
   ],
   "products": [
@@ -335,7 +373,7 @@
       "title": "iPhone 7S",
       "description": "Looks good, kinda works as well",
       "category": "Mobile - iOS",
-      "price": 1200,
+      "price": 999,
       "productId": "PRODkTFE0k7tDsIHOE7NaoL4eMxJv2J2hkM7GCeGQx8mdvqh3JzXLF8f4oibjBZG",
       "seller": "ivan",
       "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
@@ -345,7 +383,7 @@
       "title": "BMW M3",
       "description": "VROOM",
       "category": "Cars",
-      "price": 30000,
+      "price": 25,
       "productId": "PROD6EgEpniMloRFr8TGABwojxC3gAlMLPmgjMqJTVRAbuD5KNCBPvZqNp4qCjM2",
       "seller": "ivan",
       "sellerId": "328mXLsGZVySio2yKoDYYjLcFU0AqUIp5qINN7Tt8jz19EjskQAteaLnR6QG",
@@ -420,6 +458,46 @@
       "seller": "cyka",
       "sellerId": "Mq4u7MWjnUkGqq5EqLYcNFDPTTDPWTqA6S8QAFJciiGixnz4eom2clliQAMa",
       "created": "03-05-2017 / 21:18:15"
+    },
+    {
+      "title": "Test product",
+      "description": "Test product",
+      "category": "Luxury items",
+      "price": 10000000000,
+      "productId": "PROD79gOkUF7RsDd76Jid2aZjgcMX1mYezkMqVW2LDqaCL7b2rBki7LmSctSvQ4u",
+      "seller": "lasttest",
+      "sellerId": "614w127wePsEhkgnrRYl43rnSYd0NoMUkm7RKBEJwg9XriCTix5Hue75VXm9",
+      "created": "09-05-2017 / 11:50:23"
+    },
+    {
+      "title": "Test product 2",
+      "description": "Test product 2",
+      "category": "Home stuff",
+      "price": 55,
+      "productId": "PRODGbTuvsBT8uoqGWIXvIiOS0u4kQ7WgUhbqJMPoGaEjo7zhuK3tgv2lqTtZiTC",
+      "seller": "lasttest",
+      "sellerId": "614w127wePsEhkgnrRYl43rnSYd0NoMUkm7RKBEJwg9XriCTix5Hue75VXm9",
+      "created": "09-05-2017 / 11:51:14"
+    },
+    {
+      "title": "Nokia 3310",
+      "description": "Nice phone",
+      "category": "Mobile - Other",
+      "price": 5,
+      "productId": "PRODGiiATVqb91HyScBlpCUfWURa0YDs6DfPh6kYB3oN1aAKTAGTXDndTLk2IMT4",
+      "seller": "lasttest",
+      "sellerId": "614w127wePsEhkgnrRYl43rnSYd0NoMUkm7RKBEJwg9XriCTix5Hue75VXm9",
+      "created": "09-05-2017 / 11:52:08"
+    },
+    {
+      "title": "Something meaningful",
+      "description": "Totally useless",
+      "category": "Utilities",
+      "price": 20,
+      "productId": "PRODoGW47NYpezsWhwHeW8WB12tb2GDkzcbn27509pVBiH2QdEolysSRIeko5hfV",
+      "seller": "lasttest",
+      "sellerId": "614w127wePsEhkgnrRYl43rnSYd0NoMUkm7RKBEJwg9XriCTix5Hue75VXm9",
+      "created": "09-05-2017 / 11:52:19"
     }
   ]
 }
