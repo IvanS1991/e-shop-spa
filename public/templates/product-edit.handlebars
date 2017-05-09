@@ -1,0 +1,29 @@
+<fieldset>
+  <h1>Edit product</h1>
+  <nav class="navbar navbar-inverse zrow">
+    <ul class="nav navbar-nav col-md-8">
+      <li><a href="#/products">Browse products</a></li>
+      <li><a href="#/products/manage">Manage your products</a></li>
+      <li><a href="#/products/add">Add new product</a></li>
+    </ul>
+  </nav>
+  <div class="form-group">
+    <label for="tb-product-title">Title:</label>
+    <input type="text" class="form-control" id="tb-product-title" value="{{title}}"/>
+  </div>
+  <div class="form-group">
+    <label for="tb-product-description">Description</label>
+    <input type="text" id="tb-product-description" class="form-control" value="{{description}}"/>
+  </div>
+    <div class="form-group">
+    <label for="tb-product-category">Category</label>
+    <input type="text" id="tb-product-category" class="form-control" value="{{category}}"/>
+  </div>
+    </div>
+    <div class="form-group">
+    <label for="tb-product-price">Price</label>
+    <input type="text" id="tb-product-price" class="form-control" value="{{price}}"/>
+  </div>
+ 
+  <button class="btn btn-primary" id="btn-product-edit">Edit</button>
+</fieldset>

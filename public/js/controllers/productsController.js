@@ -107,6 +107,41 @@ var productsController = (function() {
         });
     };
 
+    edit(context) {
+      let productId = parseQuery(document.location.href).productid;
+      let product;
+
+      data.products.getByIds(productId)
+        .then(function(response) {
+          product = response.products[0];
+          return templates.get("product-edit");
+        })
+        .then(function(template) {
+          context.$element().html(template(product));
+
+          $("#btn-product-edit").on("click", function() {
+            let productData = {
+              title: $('#tb-product-title').val(),
+              description: $('#tb-product-description').val(),
+              category: $('#tb-product-category').val(),
+              price: Number($('#tb-product-price').val()),
+              productId: productId
+            };
+
+            console.log(productData);
+
+            data.products.edit(productData)
+              .then(function(response) {
+                toastr.success("Product edited successfuly");
+              }, function(error) {
+                toastr.error(error.responseText);
+              });
+
+            window.history.back();
+          });
+        });
+    }
+
     delete(context) {
       templates.get("product-delete")
         .then(function(template) {

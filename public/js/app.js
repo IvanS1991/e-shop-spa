@@ -21,6 +21,7 @@ import {cartController} from "cartController";
     this.get('#/products/add', productsController.add);
     this.get('#/products/manage', productsController.manage);
     this.get('#/products/manage/delete', productsController.delete);
+    this.get('#/products/manage/edit', productsController.edit);
     
     this.get('#/products/cart', cartController.show);
     this.get('#/products/cart/checkout', cartController.checkout);
