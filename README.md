@@ -44,13 +44,16 @@ When a product is sold, the seller gets his "cash" updated.
     - DELETE    /api/messages             - delete a message
       * AUTH, request data - {msgId:...}, response data - {authorId:...}
 
-  * Products - 3/3
+  * Products - 4/4
     - GET       /api/products   - get products info (filtered with queries pCategory and pTitle, get single product with query productId)
       * AUTH, request data - none, response data - {products: [...]}
 
     - POST      /api/products   - post a new product
       * AUTH, request data - {title:... , description:... , category:... , price:...}, response data - {productId:...}
 
+    - PUT       /api/products   - update a product
+      * AUTH, request data - {product:...}, response data - none
+      
     - DELETE    /api/products   - delete a product
       * AUTH, request data - {productId:...}, response data - {sellerId:...}
 
