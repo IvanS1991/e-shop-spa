@@ -145,16 +145,13 @@ var productsController = (function() {
               productId: productId
             };
 
-            console.log(productData);
-
             data.products.edit(productData)
               .then(function(response) {
+                context.redirect("#/products/manage");
                 toastr.success("Product edited successfuly");
               }, function(error) {
                 toastr.error(error.responseText);
               });
-
-            window.history.back();
           });
         });
     }
@@ -168,7 +165,7 @@ var productsController = (function() {
             let productId = parseQuery(document.location.href).productid;
             data.products.delete(productId)
               .then(function(response) {
-                window.history.back();
+                context.redirect("#/products/manage");
                 toastr.success("Product deleted successfuly!");
               }, function(error) {
                 toastr.error(error.responseText);
@@ -176,7 +173,7 @@ var productsController = (function() {
           });
 
           $("#btn-delete-decline").on("click", function() {
-            window.history.back();
+            document.location.hash = "#/products/manage";
           });
         });
     };

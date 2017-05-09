@@ -26,7 +26,7 @@ let cartController = (function() {
                     $("#btn-cart-clear").on("click", function() {
                         localStorage.removeItem("SHOPPING_CART");
                         toastr.success("Shopping cart has been cleared successfuly.");
-                        window.history.back();
+                        context.redirect("#/");
                     });
                 });
         }
